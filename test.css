@@ -148,14 +148,14 @@ a,a:focus{
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 }
-.fa-angle-double-down:before {content: "\f107";}
+.fas .fa-chevron-down:before {content: "\f107";}
 
 .downBtn {
 	position: absolute;
 	bottom: 20px;
 	left: 50% ;
-	width: 60px;
-	height: 60px ;
+	width: 40px;
+	height: 40px ;
 	margin-left:-30px;
 	/* border: 2px solid #990000; */
 	-webkit-border-radius:50%;
