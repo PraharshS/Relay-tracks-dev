@@ -128,4 +128,8 @@ a,a:focus{
     html{
         font-size: 100%;
     }
+    .mainWrapper
+    {
+        height: 96%;
+    }
 }
