@@ -8,13 +8,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid lightblue; */
+    outline: 1px solid lightblue;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-size: 67.5%;
 }
+
 .container
 {
     padding: 0 2%;
@@ -33,15 +34,15 @@ html{
     font-size: 2.6rem;
     font-family: var(--titleFont);
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .heading
 {
     letter-spacing: 1px;
     font-family: var(--primaryFont);
     font-weight: normal;
-
-    font-size: 1.8rem;
+    text-align: center;
+    font-size: 2rem;
     font-family: var(--titleFont);
 }
 .subheading{
@@ -72,7 +73,7 @@ a,a:focus{
   }
   .bold
   {
-      font-weight: 400;
+      font-weight: bold;
   }
 
 /* -----------------------MAIN------------------------------ */
@@ -110,6 +111,165 @@ a,a:focus{
     font-size: 2rem;
     color: var(--primaryOrange);
 }
+/* -----------------------END OF MAIN------------------------------ */
+/* -----------------------RELAY ADVANTAGE------------------------------ */
+
+.advantage
+{
+    min-height: 100vh;
+    background-color: var(--MatteBlack);
+}
+.advantageHeading
+{
+    padding-top: 4rem;
+}
+.advantageHeading h2{
+    color: white;
+}
+.advantageSubHeading
+{
+    margin-top: 10%;
+}
+.advantageSubHeading h2
+{
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* -----------------------SHORT SLIDER------------------------------ */
+.shortSliderWrapper
+{
+    margin-top: 13%;
+}
+.shortSlider {
+    border-radius: 2rem;
+  /* background: #5E5E5E; */
+  background: #fff;
+  position: relative;
+  height: 55vh;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+
+}
+
+.slide
+{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+max-width: 60%;
+height: auto;
+
+}
+.sliderImage{
+    /* flex-basis: 75%; */
+    height: 55%;
+}
+.sliderImage img{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+.slideText
+{
+  height: 40%;
+      border-radius: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+}
+.slideText h2{
+    color: var(--primaryOrange) !important;
+    font-family: var(--titleFont);
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    height: 40px;
+}
+.slideText p{
+    color: var(--MatteBlack) !important;
+    font-family: var(--primaryFont);
+    letter-spacing: 0.8px;
+    font-size: 1.1em;
+    color: white;
+    padding: 0 2rem;
+    text-align: left;
+    height: 50px;
+}
+
+
+.sliderImage img{
+    width: 100%;
+}
+  /* slick dots  */
+  .slick-dots {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    /* padding: 0.5rem 0; */
+    list-style-type: none;
+    background-color: grey;
+    border-radius: 1rem;
+
+
+  }
+  
+  .slick-dots li {
+    /* margin: 0 1rem; */
+
+  }
+  
+  .slick-dots button {
+
+    display: block;
+    height: 100%;
+    width: 80px;
+    
+    padding: 0;
+    border: none;
+    background-color: grey;
+    text-indent: -99999px;
+    border-radius: 1rem;
+  }
+  
+  .slick-dots .slick-active button {
+    /* transform: scale(1.8); */
+    background-color: white;
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.205);
+
+  }
+  .slick-dots .slick-active button:focus{
+      outline: none;
+  }
+/* -----------------------END OF SHORT SLIDER----------------------------- */
+/* -----------------------BIG SLIDER----------------------------- */
+
+.sliderWrapperBig
+{
+  
+    display: none;
+    
+}
+
+/* -----------------------END OF BIG SLIDER----------------------------- */
+/* -----------------------END OF RELAY ADVANTAGE------------------------------ */
 
 @media only screen and (min-width : 480px)
 {
@@ -122,6 +282,57 @@ a,a:focus{
     html{
         font-size: 90%;
     }
+    .shortSliderWrapper
+    {
+        display: none;
+    }
+    .sliderWrapperBig
+    {
+        margin-top: 2em;
+        display: block;
+        height: 50%;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sliderTextWrapperBig
+    {
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+        justify-content: space-evenly;
+ 
+    }
+    .sliderTextBig h2
+    {
+        font-size: 1.5em;
+        font-family: var(--titleFont);
+        font-weight: 500;
+    }
+    .sliderTextBig p{
+        font-size: 1em;
+        font-family: var(--primaryFont);
+    }
+    .sliderImagesBig {
+        /* flex-grow: 1; */
+        height: 120%;
+        flex-basis: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sliderimageBig img
+    {
+        width: 100%;
+       height: 90%;
+       max-height: 60%;
+       object-fit: cover;
+    }
+
 }
 @media only screen and (min-width : 900px)
 {
