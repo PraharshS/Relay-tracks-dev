@@ -150,14 +150,14 @@ a,a:focus{
 }
 .fas .fa-chevron-down:before {content: "\f107";}
 
-.downBtn {
+/* .downBtn {
 	position: absolute;
 	bottom: 2%;
 	left: 50% ;
 	width: 20px;
 	height: 20px ;
     margin: auto;
-	/* border: 2px solid #990000; */
+	border: 2px solid #990000;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
 	-ms-border-radius:50%;
@@ -189,4 +189,4 @@ a,a:focus{
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-10px);}
-}
+} */
