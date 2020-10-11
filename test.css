@@ -2,7 +2,7 @@
     --titleFont : 'Raleway', sans-serif;
     --primaryFont : 'Roboto', sans-serif;
     --primaryOrange : #f37049 ;
-    --MatteBlack : #292828;
+    --MatteBlack : #323944;
 }
 *{
     margin: 0;
@@ -81,7 +81,7 @@ a,a:focus{
 {
     height: 100vh;
 
-    background-color: #292828;
+    background-color: var(--MatteBlack);
   
 }
 .mainWrapper
@@ -171,22 +171,22 @@ a,a:focus{
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
 	40% {-webkit-transform: translateY(-30px);}
-	60% {-webkit-transform: translateY(-15px);}
+	60% {-webkit-transform: translateY(-10px);}
 }
  
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
 	40% {-moz-transform: translateY(-30px);}
-	60% {-moz-transform: translateY(-15px);}
+	60% {-moz-transform: translateY(-10px);}
 }
  
 @-o-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
 	40% {-o-transform: translateY(-30px);}
-	60% {-o-transform: translateY(-15px);}
+	60% {-o-transform: translateY(-10px);}
 }
 @keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+	60% {transform: translateY(-10px);}
 }
