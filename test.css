@@ -13,7 +13,7 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-size: 67.5%;
+    font-size: 67.5% !important;
 }
 
 .container
@@ -73,8 +73,8 @@ html{
     font-size: 1rem;
 }
 a,a:focus{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
   }
   .bold
   {
@@ -211,6 +211,8 @@ height: auto;
     text-align: left;
     height: 40px;
 }
+
+
 .slideText p{
     color: var(--MatteBlack) !important;
     font-family: var(--primaryFont);
@@ -903,7 +905,7 @@ height: auto;
     }
 
     html{
-        font-size: 90%;
+        font-size: 90% !important;
     }
     .cardWrapper
     {
@@ -970,13 +972,35 @@ height: auto;
         font-family: var(--titleFont);
         font-weight: 500;
     }
+    .headButton
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .headButton .collapseBtn
+    {
+        font-size: 1.5rem;
+        color: var(--primaryOrange);
+        outline: none;
+        background: transparent;
+        border : none;
+        cursor: pointer;
+    }
     .activeRow
     {
+       
         background-color: grey;
         color: white;
     }
     .activeP{
+      
         display: block !important;
+    }
+    .rotate
+    {
+        transition-property: all;
+        transition-duration: 1s;
+        transform: rotate(180deg);
     }
     .sliderTextBig p{
         display: none;
@@ -1047,7 +1071,7 @@ height: auto;
 @media only screen and (min-width : 900px)
 {
     html{
-        font-size: 100%;
+        font-size: 100% !important;
     }
     .mainWrapper
     {

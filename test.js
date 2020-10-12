@@ -62,11 +62,24 @@ $(".relayCardWrapper")
     prevArrow: ".relayArrows .left",
     nextArrow: ".relayArrows .right",
   });
-// $(".sliderImagesBig").not(".slick-initialized").slick({
-//   autoplay: true,
-//   autoplaySpeed: 3000,
-//   dots: false,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   // centerMode: true,
-// });
+// var collBtn = document.querySelectorAll(".collapse");
+// var i = 0;
+// for (let i = 0; i < collBtn.length; i++) {
+//   collBtn[i].addEventListener("click", () => {
+//     collBtn[i].classList.toggle("rotate");
+//     collBtn[i].parentElement.parentElement.classList.toggle("activeRow");
+//     collBtn[i].parentElement.parentElement.lastElementChild.classList.toggle(
+//       "activeP"
+//     );
+//     for (let j = 0; j < collBtn.length; j++) {
+//       if (i != j) {
+//         collBtn[j].parentElement.parentElement.classList.remove("activeRow");
+//         collBtn[
+//           j
+//         ].parentElement.parentElement.lastElementChild.classList.remove(
+//           "activeP"
+//         );
+//       }
+//     }
+//   });
+// }
