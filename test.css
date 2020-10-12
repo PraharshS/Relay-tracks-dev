@@ -507,61 +507,74 @@ height: auto;
     margin-top: 2rem;
     font-weight: 400;
 }
+.relayCardWrapper
+{
+    height: 60%;
+    margin-top: 5rem;
+    /* background-color: #285AEB; */
+}
 .relayCard
 {
-    position: relative;
-    height: 400px;
-    width: 270px;
-    margin: 2rem auto;
+    margin: 1rem 8rem;
     /* background-color: #00B0FF; */
-    justify-content: end;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    
+
+}
+.relayImage
+{
+    position: relative;
+    height: 40%;
+   
+}
+
+.relayImage img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 80%; 
+    transform: translate(-50%,-50%); 
+    margin: auto;
+    border-radius: 50%;
 }
 .relayText
 {
-    background-color: white;
-   border-radius: 2rem;
-    width: 100%;
-    height: 60%;
-    text-align: center;
+    margin: auto;
+    height: 50%;
     
+    background-color: #fff;
+
+    text-align: center;
+    /* padding-top: 4rem; */
+    font-family: var(--titleFont);
+
+ 
+    
+    border-radius: 2.4rem;
 }
-.relayText h2
-{
+.relayText h2{
     font-size: 2rem;
     padding-top: 8rem;
-    font-family: var(--titleFont);
-   
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
 }
 .relayText p{
-    font-size: 1.5rem;
-    font-family: var(--primaryFont);
-    font-weight: 100;
+    font-size-adjust: 1.5rem;
     letter-spacing: 1px;
-    margin-top: 2rem;
+    /* margin-top: 1rem; */
 }
-
-.relayImage
+.relayArrows
 {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
- 
-  
+    height: 100px;
+    width: 100px;
 }
-.relayImage img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-.relayCardWrapper
+.left
 {
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(1,1fr);
+    font-size: 3rem;
+    color: white;
 }
 /* -----------------------END OF RELAYERS------------------------------ */
 /* -----------------------LEVEL UP ------------------------------ */
@@ -684,63 +697,59 @@ height: auto;
     html{
         font-size: 80%;
     }
-
     .relayCard
     {
-        position: relative;
-        height: 250px;
-        width: 170px;
-        margin: 2rem auto;
+        margin: 1rem 6rem;
         /* background-color: #00B0FF; */
-        justify-content: end;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
-        align-items: flex-end;
+        
+    
+    }
+    .relayImage
+    {
+        position: relative;
+        height: 40%;
+       
+    }
+    
+    .relayImage img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 80%; 
+        transform: translate(-50%,-50%); 
+        margin: auto;
+        border-radius: 50%;
     }
     .relayText
     {
-        background-color: white;
-        border-radius: 2rem;
         width: 100%;
         height: 60%;
-        text-align: center;
         
-    }
-    .relayText h2
-    {
-        font-size: 1.5rem;
-        padding-top: 5rem;
+        background-color: #fff;
+    
+        text-align: center;
+        /* padding-top: 4rem; */
         font-family: var(--titleFont);
     
+     
+        
+        border-radius: 2.4rem;
+    }
+    .relayText h2{
+        font-size: 2.3rem;
+        padding-top: 10rem;
+        padding-bottom: 0.7rem;
+        letter-spacing: 1px;
     }
     .relayText p{
-        font-size: 1rem;
-        font-family: var(--primaryFont);
-        font-weight: 100;
+        font-size-adjust: 1.7rem;
         letter-spacing: 1px;
-        margin-top: 0.8rem;
+        /* margin-top: 1rem; */
     }
-
-    .relayImage
-    {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    
-    
-    }
-    .relayImage img{
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-    }
-    .relayCardWrapper
-    {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 20px;
-    }
+  
 
     .cardWrapper
     {
@@ -800,67 +809,67 @@ height: auto;
 }
 @media only screen and (min-width : 768px)
 {
+    .relayCard
+    {
+        margin: 1rem 1rem;
+       
+        /* background-color: #00B0FF; */
+       
+    
+    }
+    .relayImage
+    {
+        position: relative;
+        height: 40%;
+       
+    }
+    
+    .relayImage img{
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        left: 50%;
+        top: 100%; 
+        transform: translate(-50%,-50%); 
+        margin: auto;
+        border-radius: 50%;
+    }
+    .relayText
+    {
+        margin: auto;
+        height: 50%;
+        width: 100%;
+        background-color: #fff;
+    
+        text-align: center;
+        /* padding-top: 4rem; */
+        font-family: var(--titleFont);
+        /* background-color: #990000; */
+     
+        
+        border-radius: 2.4rem;
+    }
+    .relayText h2{
+        font-size: 1.4rem;
+        padding-top: 5rem;
+        padding-bottom: 0.7rem;
+        letter-spacing: 1px;
+        
+    }
+    .relayText p{
+        font-size-adjust: 1.7rem;
+        letter-spacing: 1px;
+        /* margin-top: 1rem; */
+    }
+  
+   
     .name h2{
         font-size: 1.4rem;
     }
     .number h2{
         font-size: 1.4rem;
     }
-    .relayCard
-    {
-        position: relative;
-        height: 300px;
-        width: 200px;
-        margin: 2rem auto;
-        /* background-color: #00B0FF; */
-        justify-content: end;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .relayText
-    {
-        background-color: white;
-        border-radius: 2rem;
-        width: 100%;
-        height: 60%;
-        text-align: center;
-        
-    }
-    .relayText h2
-    {
-        font-size: 1.5rem;
-        padding-top: 5rem;
-        font-family: var(--titleFont);
-    
-    }
-    .relayText p{
-        font-size: 1rem;
-        font-family: var(--primaryFont);
-        font-weight: 100;
-        letter-spacing: 1px;
-        margin-top: 0.8rem;
-    }
 
-    .relayImage
-    {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    
-    
-    }
-    .relayImage img{
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-    }
-    .relayCardWrapper
-    {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
     html{
         font-size: 90%;
     }
@@ -1012,6 +1021,59 @@ height: auto;
     {
         height: 96%;
     }
+    .relayCard
+    {
+        margin: 1rem 3rem;
+       
+        /* background-color: #00B0FF; */
+       
+    
+    }
+    .relayImage
+    {
+        position: relative;
+        height: 40%;
+       
+    }
+    
+    .relayImage img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 100%; 
+        transform: translate(-50%,-50%); 
+        margin: auto;
+        border-radius: 50%;
+    }
+    .relayText
+    {
+        margin: auto;
+        height: 50%;
+        width: 100%;
+        background-color: #fff;
+    
+        text-align: center;
+        /* padding-top: 4rem; */
+        font-family: var(--titleFont);
+        /* background-color: #990000; */
+     
+        
+        border-radius: 2.4rem;
+    }
+    .relayText h2{
+        font-size: 1.4rem;
+        padding-top: 6rem;
+        padding-bottom: 0.7rem;
+        letter-spacing: 1px;
+        
+    }
+    .relayText p{
+        font-size-adjust: 1.7rem;
+        letter-spacing: 1px;
+        /* margin-top: 1rem; */
+    }
+  
 }
 
 

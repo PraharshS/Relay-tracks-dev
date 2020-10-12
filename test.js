@@ -22,6 +22,46 @@ $(".shortSlider").not(".slick-initialized").slick({
   arrows: false,
   // centerMode: true,
 });
+$(".relayCardWrapper")
+  .not(".slick-initialized")
+  .slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+    prevArrow: ".relayArrows .left",
+    nextArrow: ".relayArrows .right",
+  });
 // $(".sliderImagesBig").not(".slick-initialized").slick({
 //   autoplay: true,
 //   autoplaySpeed: 3000,
