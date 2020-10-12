@@ -559,6 +559,12 @@ height: auto;
     grid-template-columns: repeat(1,1fr);
 }
 
+/* -----------------------LEVEL UP ------------------------------ */
+.levelup
+{
+
+}
+/* -----------------------END OF LEVEL UP------------------------------ */
 /* -----------------------END OF RELAYERS------------------------------ */
 @media only screen and (min-width : 480px)
 {
@@ -753,7 +759,7 @@ height: auto;
         margin-top: 2.5rem;
         display: block;
         height: 65%;
-        background-color: antiquewhite; 
+        /* background-color: antiquewhite;  */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
