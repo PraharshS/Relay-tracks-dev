@@ -385,7 +385,7 @@ height: auto;
 /* -----------------------RELAY TABLE------------------------------ */
 .table
 {
-    min-height: 80vh;
+    min-height: 100vh;
     /* background-color: #323944; */
     display: flex;
     justify-content: center;
