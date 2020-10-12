@@ -583,14 +583,14 @@ height: auto;
     justify-content: center;
     
 }
-.text h2{
+.leveltext h2{
     font-size: 3rem;
     font-family: var(--titleFont);
     color: white;
     margin-bottom: 1rem;
     text-align: center;
 }
-.text p{
+.leveltext p{
     font-size: 1.4rem;
     text-align: center;
 }
