@@ -76,7 +76,12 @@ a,a:focus{
       font-weight: bold;
   }
 
-/* -----------------------MAIN------------------------------ */
+  .space
+{
+    height: 100px;
+}
+/* 
+-----------------------MAIN------------------------------ */
 
 .main
 {
@@ -558,7 +563,7 @@ height: auto;
     margin: auto;
     grid-template-columns: repeat(1,1fr);
 }
-
+/* -----------------------END OF RELAYERS------------------------------ */
 /* -----------------------LEVEL UP ------------------------------ */
 .levelup
 {
@@ -613,12 +618,72 @@ height: auto;
 }
 
 /* -----------------------END OF LEVEL UP------------------------------ */
-/* -----------------------END OF RELAYERS------------------------------ */
+/* -----------------------FOOTER----------------------------- */
+.footer
+{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: var(--MatteBlack);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: #990000; */
+    align-items: center;
+    width: 20%;
+}
+.link
+{
+    margin-top: 0.5rem;
+    font-size: 4rem;
+}
+.credentials
+{
+    color: white;
+    margin-top: 1rem;
+}
+.name
+{
+    margin-bottom: 0.5rem;
+}
+.name h2{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--titleFont);
+    letter-spacing: 1px;
+}
+.number h2{
+    font-weight: 200;
+    font-size: 1.4rem;
+    font-family: var(--primaryFont);
+    letter-spacing: 1px;
+}
+.insta .fab {
+   
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.linkedin
+{
+    color: #00a0dc;;
+}
+.youtube
+{
+    color: #ff0000;
+}
+/* -----------------------END OF FOOTER------------------------------ */
 @media only screen and (min-width : 480px)
 {
     html{
         font-size: 80%;
     }
+
     .relayCard
     {
         position: relative;
@@ -706,10 +771,40 @@ height: auto;
         font-size: 1.1rem;
 
     }
-
+    .links
+    {
+        flex-direction: row;
+        /* background-color:lightblue; */
+        width: 60%;
+        max-width: 400px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .credentials
+    {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: space-evenly;
+        width: 80%;
+        max-width: 800px;
+    }
+  
+    .name h2{
+        font-size: 1rem;
+    }
+    .number h2{
+        font-size: 1rem;
+    }
 }
 @media only screen and (min-width : 768px)
 {
+    .name h2{
+        font-size: 1.4rem;
+    }
+    .number h2{
+        font-size: 1.4rem;
+    }
     .relayCard
     {
         position: relative;
