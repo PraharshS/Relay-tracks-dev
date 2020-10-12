@@ -567,12 +567,16 @@ height: auto;
 }
 .relayArrows
 {
+    left: 50;
+    top: 0;
+    background-color: #00B0FF;
     position: absolute;
     height: 100px;
     width: 100px;
 }
-.left
+.left i
 {
+    z-index: 2;
     font-size: 3rem;
     color: white;
 }
@@ -583,7 +587,7 @@ height: auto;
     background-color: var(--MatteBlack);
     padding-bottom: 4rem;
     
-    height: auto;
+    height: 300px;
 }
 .levelUpWrapper
 {
@@ -675,6 +679,11 @@ height: auto;
     font-size: 1.4rem;
     font-family: var(--primaryFont);
     letter-spacing: 1px;
+}
+.space1
+{
+    height: 100px;
+    background-color: var(--MatteBlack);
 }
 .insta .fab {
    
