@@ -510,7 +510,7 @@ height: auto;
 .relayCardWrapper
 {
     height: 60%;
-    margin-top: 5rem;
+    margin-top: 2rem;
     /* background-color: #285AEB; */
 }
 .relayCard
@@ -637,6 +637,22 @@ height: auto;
 }
 
 /* -----------------------END OF LEVEL UP------------------------------ */
+/* -----------------------MENTORS------------------------------ */
+.mentors
+{
+    background-color: #fff !important;
+}
+.mentors .heading
+{
+    color: var(--MatteBlack);
+}
+.mentors .relayCard .relayText
+{
+    background-color: var(--MatteBlack);
+    color: white;
+}
+
+/* -----------------------END OF MENTORS------------------------------ */
 /* -----------------------FOOTER----------------------------- */
 .footer
 {
