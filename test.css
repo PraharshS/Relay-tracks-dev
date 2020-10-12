@@ -567,6 +567,7 @@ height: auto;
 }
 .relayArrows
 {
+    display: none;
     left: 50;
     top: 0;
     background-color: #00B0FF;
