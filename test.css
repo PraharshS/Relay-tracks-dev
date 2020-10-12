@@ -956,7 +956,7 @@ height: auto;
         flex-direction: column;
         margin-right: 2rem;
         justify-content: space-evenly;
- 
+        
     }
     .sliderTextBig 
     {
@@ -975,9 +975,7 @@ height: auto;
         background-color: grey;
         color: white;
     }
-    .activeP{
-        display: block !important;
-    }
+   
     .sliderTextBig p{
         /* display: none; */
         padding-top: 0.4rem;
@@ -996,6 +994,16 @@ height: auto;
         border: none;
         color: var(--primaryOrange);
     }
+    .arrowdown{
+        transform: rotate(0deg);
+        transition: transform 0.3s linear;
+      }
+      
+      .arrowdown.open{
+        
+        transform: rotate(180deg);
+        transition: transform 0.3s linear;
+      }
     .sliderImagesBig {
         /* flex-grow: 1; */
         height: 100%;

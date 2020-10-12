@@ -68,6 +68,8 @@ var collapseBtn = document.querySelectorAll(".titleAndButton button");
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].addEventListener("click", () => {
     collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
+    collapseBtn[i].firstChild.classList.toggle("open");
+    console.log(collapseBtn[i]);
     for (let j = 0; j < collapseBtn.length; j++) {
       if (i != j) {
         var element = collapseBtn[j].parentElement.parentElement;
@@ -76,6 +78,21 @@ for (let i = 0; i < collapseBtn.length; i++) {
     }
   });
 }
+// (function (document) {
+//   var div = document.getElementById("container");
+//   var icon = document.getElementById("icon");
+//   var open = false;
+
+//   div.addEventListener("click", function () {
+//     if (open) {
+//       icon.className = "fa fa-arrow-down";
+//     } else {
+//       icon.className = "fa fa-arrow-down open";
+//     }
+
+//     open = !open;
+//   });
+// })(document);
 // $(".sliderImagesBig").not(".slick-initialized").slick({
 //   autoplay: true,
 //   autoplaySpeed: 3000,
