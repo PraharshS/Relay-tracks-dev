@@ -62,6 +62,20 @@ $(".relayCardWrapper")
     prevArrow: ".relayArrows .left",
     nextArrow: ".relayArrows .right",
   });
+
+var collapseBtn = document.querySelectorAll(".titleAndButton button");
+
+for (let i = 0; i < collapseBtn.length; i++) {
+  collapseBtn[i].addEventListener("click", () => {
+    collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
+    for (let j = 0; j < collapseBtn.length; j++) {
+      if (i != j) {
+        var element = collapseBtn[j].parentElement.parentElement;
+        element.classList.remove("activeRow");
+      }
+    }
+  });
+}
 // $(".sliderImagesBig").not(".slick-initialized").slick({
 //   autoplay: true,
 //   autoplaySpeed: 3000,

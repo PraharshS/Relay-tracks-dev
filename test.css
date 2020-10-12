@@ -979,10 +979,22 @@ height: auto;
         display: block !important;
     }
     .sliderTextBig p{
-        display: none;
+        /* display: none; */
         padding-top: 0.4rem;
         font-size: 0.9em;
         font-family: var(--primaryFont);
+    }
+    .titleAndButton
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .titleAndButton button{
+        font-size: 1.5rem;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        color: var(--primaryOrange);
     }
     .sliderImagesBig {
         /* flex-grow: 1; */
