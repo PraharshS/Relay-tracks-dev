@@ -498,7 +498,8 @@ height: auto;
 }
 .relayHeading
 {
-    padding: 2rem 0;
+    padding: 4rem 0;
+    
 }
 .relayHeading h2{
     color: white;
@@ -515,7 +516,7 @@ height: auto;
 .relayCardWrapper
 {
     height: 60%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* background-color: #285AEB; */
 }
 .relayCard
@@ -548,7 +549,7 @@ height: auto;
 {
     margin: auto;
     height: 50%;
-    
+
     background-color: #fff;
 
     text-align: center;
