@@ -355,15 +355,20 @@ height: auto;
     max-width: 300px;
     margin: auto;
     height: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 4px 4px 3px var(--MatteBlack);
+    /* border: none !important; */
+    outline: none;
+    /* border-radius: 0.5rem; */
+    /* box-shadow: 4px 4px 3px var(--MatteBlack); */
+}
+.card .image 
+{
+    text-align : center;
 }
 .card .image img{
-    width: 100%;
+    width: 70%;
+
 }
-.image{
-    flex-basis: 50%;
-}
+
 .cardContent
 {
     /* flex-basis: 50%; */
@@ -381,19 +386,20 @@ height: auto;
 }
 .cardText h2
 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
     font-family: var(--titleFont);
-    font-weight: 400;
-    height: 40px;
+    font-weight: 600;
+    /* height: 40px; */
 }
 .cardText p{
-    height: 40px;
-    font-size: 1.5rem;
+    /* height: 40px; */
+    font-size: 1.2rem;
     font-family: var(--primaryFont);
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 .cardContent button{
-    margin : 2rem auto;
+    margin : 1rem auto 2rem auto;
     padding: 1rem 2rem;
     border-radius: 2rem;
     outline: none;
@@ -401,7 +407,7 @@ height: auto;
     background-color: var(--primaryOrange);
 }
 .cardContent a{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     font-family: var(--primaryFont);
     letter-spacing: 0.5px;
@@ -521,7 +527,7 @@ height: auto;
 }
 .relayHeading
 {
-    padding: 4rem 0;
+    padding-top: 4rem;
     
 }
 .relayHeading h2{
@@ -940,19 +946,29 @@ height: auto;
         grid-gap: 10px;
     
     }
+    .cardText
+    {
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+       
+    }
     .cardText h2
     {
-        font-size: 1.4rem;
-        height: 20px;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-family: var(--titleFont);
+        font-weight: 600;
+        height: 40px;
     }
     .cardText p{
-        height: 20px;
+        /* height: 40px; */
         font-size: 1rem;
-
-        margin-top: 1.5rem;
+        font-family: var(--primaryFont);
+        margin-top: 0rem;
     }
     .cardContent button{
-        margin : 3rem 0 1rem 0;
+        margin : 2rem 0 2rem 0;
         padding: 0.8rem 1.5rem;
     
         outline: none;
