@@ -36,7 +36,7 @@ $(".relayCardWrapper")
   .slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: true,
+    // centerMode: true,
     centerPadding: "0px",
     slidesToShow: 3,
     responsive: [
@@ -44,8 +44,8 @@ $(".relayCardWrapper")
         breakpoint: 900,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: "0px",
+          // centerMode: true,
+          centerPadding: "1rem",
           slidesToShow: 3,
         },
       },
@@ -53,8 +53,8 @@ $(".relayCardWrapper")
         breakpoint: 768,
         settings: {
           arrows: true,
-          centerMode: true,
-          centerPadding: "0px",
+          // centerMode: true,
+          centerPadding: "60px",
           slidesToShow: 1,
         },
       },
