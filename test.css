@@ -79,9 +79,11 @@ a,a:focus{
     text-decoration: none;
     color: white;
   }
-  .bold
+  .boldText
   {
       font-weight: bold;
+      
+      color: black !important;
   }
 
   /* .space
@@ -997,7 +999,7 @@ height: auto;
         display: flex;
         justify-content: space-between;
     }
-    .titleAndButton span{
+    .titleAndButton span .fas{
         font-size: 1.3rem;
         background: transparent;
         cursor: pointer;
