@@ -651,7 +651,7 @@ height: auto;
 
  
     
-    border-radius: 2.4rem;
+    border-radius: 2.4rem
 }
 .relayText h2{
     font-size: 1.6rem;
@@ -1060,10 +1060,11 @@ height: auto;
     }
     .sliderWrapperBig
     {
-        margin-top : 1rem;
-       
+        margin: 2rem auto;
+        
         display: block;
-        min-height: 70%;
+        min-height: 100%;
+        width: 100%;
         /* background-color: antiquewhite;  */
         display: flex;
         flex-direction: row;
@@ -1074,9 +1075,10 @@ height: auto;
     .sliderTextWrapperBig
     {
        
-        height: 100%;
+        height: 90%;
+        /* margin-top: 2rem; */
         flex-basis: 45%;
-        align-self: center;
+      
         /* overflow-y: scroll; */
         display: flex;
         flex-direction: column;
@@ -1086,7 +1088,7 @@ height: auto;
     }
     .sliderTextBig 
     {
-        padding: 2rem 2rem;
+        padding: 2rem;
         border-radius: 0.5rem;
         background-color: #4f5765;
         margin-top: 0.5rem;
@@ -1094,7 +1096,7 @@ height: auto;
     .sliderTextBig h2
     {
         color: #fff;
-        font-size: 1em;
+        font-size: 1.1em;
         font-family: var(--titleFont);
         font-weight: 500;
     }
@@ -1109,6 +1111,7 @@ height: auto;
         color: #fff;
         padding-top: 0.2rem;
         font-size: 1em;
+        /* width: 95%; */
         font-family: var(--primaryFont);
     }
     .titleAndButton
@@ -1134,30 +1137,23 @@ height: auto;
         transition: transform 0.1s linear;
       }
     .imageSliderBig {
-        /* flex-grow: 1; */
-      
+        /* flex-grow: 2; */
+        
         flex-basis: 50%;
-        height: 100%;
+        height: 100% !important;
         display: flex;
         align-items: center;
         justify-content: center;
         /* outline: 1px solid red; */
     }
-    .sliderimageBig
+    .carousel
     {
-        /* outline: 1px solid blue; */
-        /* height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; */
+        width: 100%;
     }
-    .sliderimageBig img
-    {
-        border: 1px solid red;
-         width: 100%;
-   
-       object-fit: cover;
+    .carousel-item img{
+        width: 100%;
     }
+  
     .tableHeading h2
     {
         font-size: 1.6rem;
