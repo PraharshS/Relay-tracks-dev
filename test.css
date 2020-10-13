@@ -39,7 +39,7 @@ button:focus{
     height: 150px;
 }
 .prom{
-    margin-bottom: 1rem;
+    margin: -2rem 0 0 0 ;
     letter-spacing: 2px;
     font-size: 1.8rem !important;
     font-family: var(--primaryFont);
