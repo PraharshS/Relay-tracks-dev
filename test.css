@@ -35,7 +35,7 @@ button:focus{
 } */
 .title svg
 {
-    height: 60px;
+    height: 150px;
 }
 .prom{
     letter-spacing: 2px;
@@ -1031,13 +1031,13 @@ height: auto;
     }
     .arrowdown{
         transform: rotate(0deg);
-        transition: transform 0.3s linear;
+        transition: transform 0.1s linear;
       }
       
       .arrowdown.open{
         
         transform: rotate(180deg);
-        transition: transform 0.3s linear;
+        transition: transform 0.1s linear;
       }
     .imageSliderBig {
         /* flex-grow: 1; */
