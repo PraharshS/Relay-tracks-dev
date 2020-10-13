@@ -55,6 +55,10 @@ button:focus{
     font-size: 2rem;
 
 }
+.animationText .subheading
+{
+    font-weight: bold !important;
+}
 .subheading{
     /* font-size: 1.3rem; */
     font-weight: 200 !important;
