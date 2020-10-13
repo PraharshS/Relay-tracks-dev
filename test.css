@@ -10,6 +10,9 @@
     box-sizing: border-box;
     /* outline: 1px solid lightblue; */
 }
+.slick-slide{
+    outline: none;
+}
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -77,10 +80,15 @@ button:focus{
     
     font-size: 1rem;
 }
-a,a:focus{
-    text-decoration: none;
+button
+{
+    cursor: pointer;
+}
+a,a:focus,a:hover,a:active{
+    text-decoration: none !important;
+    border: none !important;
     color: white !important;
-  }
+}
   .boldText
   {
       font-weight: bold;
