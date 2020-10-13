@@ -4,6 +4,11 @@
     --primaryOrange : #f37049 ;
     --MatteBlack : #323944;
 }
+.collapse,.collapsing
+{
+    /* overflow-y: scroll; */
+ 
+}
 *{
     margin: 0;
     padding: 0;
@@ -1062,7 +1067,7 @@ height: auto;
     }
     .sliderWrapperBig
     {
-        margin: 2rem auto;
+        margin: 0rem auto;
         
         display: block;
         min-height: 100%;
@@ -1077,7 +1082,7 @@ height: auto;
     .sliderTextWrapperBig
     {
        
-        height: 90%;
+      
         /* margin-top: 2rem; */
         flex-basis: 45%;
       
@@ -1098,7 +1103,7 @@ height: auto;
     .sliderTextBig h2
     {
         color: #fff;
-        font-size: 1.1em;
+        font-size: 1em;
         font-family: var(--titleFont);
         font-weight: 500;
     }
