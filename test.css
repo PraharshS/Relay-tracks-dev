@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     /* outline: 1px solid lightblue; */
 }
 .slick-slide{
@@ -55,7 +56,7 @@ button:focus{
     font-weight: normal;
     text-align: center;
     font-size: 2rem;
-    font-family: var(--titleFont);
+
 }
 .subheading{
     /* font-size: 1.3rem; */
@@ -70,6 +71,17 @@ button:focus{
     font-weight: 200;
 
     font-family: var(--primaryFont);
+}
+.fa-circle
+{
+    font-size: 0.5rem;
+    color: var(--primaryOrange);
+    padding: 0.5rem;
+
+}
+.tag
+{
+    margin-bottom: 2rem;
 }
 .orange
 {
@@ -224,7 +236,7 @@ height: auto;
 }
 .slideText h2{
     color: var(--primaryOrange) !important;
-    font-family: var(--titleFont);
+    font-family: var(--primaryFont) !important;
      margin-top: 1rem; 
     color: white;
     font-size: 1.2em;
@@ -291,6 +303,13 @@ height: auto;
   .slick-dots .slick-active button:focus{
       outline: none;
   }
+  /* .slick-prev{
+      z-index: 1;
+  }
+  .leftArrow
+  {
+      z-index: 2;
+  } */
 /* -----------------------END OF SHORT SLIDER----------------------------- */
 /* -----------------------BIG SLIDER----------------------------- */
 
@@ -387,7 +406,8 @@ height: auto;
 }
 .cardText
 {
-    margin-top: 2rem;
+    height: 100px;
+    
     text-align: center;
     width: 100%;
    
@@ -401,13 +421,17 @@ height: auto;
     /* height: 40px; */
 }
 .cardText p{
-    /* height: 40px; */
+    height: 60px;
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+    
     font-size: 1.2rem;
     font-family: var(--primaryFont);
-    margin-top: 0rem;
+    margin: 0 auto;
 }
 .cardContent button{
-    margin : 1rem auto 2rem auto;
+    margin : 1rem auto 1rem auto;
     padding: 1rem 2rem;
     border-radius: 2rem;
     outline: none;
@@ -423,13 +447,14 @@ height: auto;
 
 .stayTuned
 {
-    margin: 4rem 0 0 0;
+    margin: 2rem 0;
     text-align: center;
 }
 .stayTuned h2
 {
     font-family: var(--primaryFont);
-    font-weight: 200;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 /* -----------------------END OF RELAY TRACKS------------------------------ */
 /* -----------------------RELAY TABLE------------------------------ */
@@ -438,7 +463,9 @@ height: auto;
     min-height: 100vh;
     /* background-color: #323944; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
     align-items: center;
 }
 .tableWrapper
@@ -531,7 +558,35 @@ height: auto;
 {
     min-height: 120vh;
     background-color: var(--MatteBlack);
+    position: relative;
   
+}
+.relayArrows
+{
+    position: absolute;
+    height: 100;
+    /* background-color: #00a0dc; */
+    color: var(--primaryOrange);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    top: 50%;
+    padding: 3%;
+
+    /* z-index: 9999; */
+
+}
+.relayArrows button,.relayArrows button:focus{
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 2rem;
+    color: var(--primaryOrange) !important;
+    cursor: pointer;
+    z-index: 1111;
+}
+.slick-prev:before, .slick-next:before{
+    color:red;
 }
 .relayHeading
 {
@@ -610,22 +665,8 @@ height: auto;
     letter-spacing: 1px;
     /* margin-top: 1rem; */
 }
-.relayArrows
-{
-    display: none;
-    left: 50;
-    top: 0;
-    background-color: #00B0FF;
-    position: absolute;
-    height: 100px;
-    width: 100px;
-}
-.left i
-{
-    z-index: 2;
-    font-size: 3rem;
-    color: white;
-}
+
+
 /* -----------------------END OF RELAYERS------------------------------ */
 /* -----------------------LEVEL UP ------------------------------ */
 .levelup
@@ -677,7 +718,7 @@ height: auto;
 }
 .invite a{
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -759,11 +800,11 @@ height: auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.linkedin
+.linkedin .fab
 {
     color: #00a0dc;;
 }
-.youtube
+.youtube .fab
 {
     color: #ff0000;
 }
@@ -842,16 +883,21 @@ height: auto;
         grid-gap: 20px;
     
     }
+    .cardText
+    {
+        height: 100px;
+        margin-bottom: 1rem;
+    }
     .cardText h2
     {
         font-size: 1.5rem;
-        height: 20px;
+        
     }
     .cardText p{
-        height: 20px;
+        height: auto;
         font-size: 1rem;
 
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
     .cardContent button{
         margin : 2rem auto;
@@ -972,7 +1018,7 @@ height: auto;
     }
     .cardText
     {
-        margin-top: 2rem;
+        margin : 1rem 0 2rem 0;
         text-align: center;
         width: 100%;
        
@@ -989,7 +1035,8 @@ height: auto;
         /* height: 40px; */
         font-size: 1rem;
         font-family: var(--primaryFont);
-        margin-top: 0rem;
+        padding: 0 1rem;
+        margin: 0rem;
     }
     .cardContent button{
         margin : 2rem 0 2rem 0;

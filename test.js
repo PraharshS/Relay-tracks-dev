@@ -5,12 +5,7 @@ $(".animationText").not(".slick-initialized").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
-
-  // fade: true,
-  // centerMode: true,
-  // centerMargin: "30px",
-  prevArrow: ".site-slider .slider-btn .prev",
-  nextArrow: ".site-slider .slider-btn .next",
+  arrows: false,
 });
 
 $(".shortSlider").not(".slick-initialized").slick({
@@ -23,8 +18,8 @@ $(".shortSlider").not(".slick-initialized").slick({
   // centerMode: true,
 });
 $(".sliderImagesBig").slick({
-  // autoplay: true,
-  // autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   dots: false,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -52,7 +47,6 @@ $(".relayCardWrapper")
       {
         breakpoint: 768,
         settings: {
-          arrows: true,
           // centerMode: true,
           centerPadding: "60px",
           slidesToShow: 1,
@@ -61,15 +55,96 @@ $(".relayCardWrapper")
       {
         breakpoint: 480,
         settings: {
-          arrows: true,
           centerMode: true,
           centerPadding: "0px",
           slidesToShow: 1,
         },
       },
     ],
-    prevArrow: ".relayArrows .left",
-    nextArrow: ".relayArrows .right",
+    arrows: false,
+    dots: false,
+    // prevArrow: $(".leftArrow"),
+    // nextArrow: $(".rightArrow"),
+  });
+$(".relayCardWrapper1")
+  .not(".slick-initialized")
+  .slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // centerMode: true,
+    centerPadding: "0px",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          centerPadding: "1rem",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          // centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+    arrows: false,
+    dots: false,
+    // prevArrow: $(".leftArrow"),
+    // nextArrow: $(".rightArrow"),
+  });
+$(".relayCardWrapper2")
+  .not(".slick-initialized")
+  .slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    // centerMode: true,
+    centerPadding: "0px",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: true,
+          // centerMode: true,
+          centerPadding: "1rem",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          // centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: "0px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+    arrows: false,
+    dots: false,
+    // prevArrow: $(".leftArrow"),
+    // nextArrow: $(".rightArrow"),
   });
 
 var collapseBtn = document.querySelectorAll(".titleAndButton .fas");
