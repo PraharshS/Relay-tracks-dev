@@ -943,16 +943,15 @@ height: auto;
     }
     .sliderWrapperBig
     {
-        margin-top: 2.5rem;
+        margin: 1rem;
+       
         display: block;
-        min-height: 100%;
+        min-height: 65%;
         /* background-color: antiquewhite;  */
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        overflow: scroll;
-       
     }
 
     .sliderTextWrapperBig
@@ -977,20 +976,20 @@ height: auto;
     }
     .sliderTextBig h2
     {
-        font-size: 1.1em;
+        font-size: 1em;
         font-family: var(--titleFont);
         font-weight: 500;
     }
     .activeRow
     {
-        background-color: grey;
+        background-color: #515a68;
         color: white;
     }
    
     .sliderTextBig p{
         /* display: none; */
         padding-top: 0.2rem;
-        font-size: 0.9em;
+        font-size: 0.8em;
         font-family: var(--primaryFont);
     }
     .titleAndButton
@@ -1015,11 +1014,11 @@ height: auto;
         transform: rotate(180deg);
         transition: transform 0.3s linear;
       }
-    .sliderImagesBig {
+    .imageSliderBig {
         /* flex-grow: 1; */
-        height: 100%;
+      
         flex-basis: 50%;
-        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1028,17 +1027,16 @@ height: auto;
     .sliderimageBig
     {
         /* outline: 1px solid blue; */
-        height: 70%;
+        /* height: 100%;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: flex-start; */
     }
     .sliderimageBig img
     {
-    
-        width: 80%;
-       /* height: 100%; */
-       max-height: 100%;
+        border: 1px solid red;
+         width: 100%;
+   
        object-fit: cover;
     }
     .tableHeading h2

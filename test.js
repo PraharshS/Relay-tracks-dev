@@ -22,6 +22,15 @@ $(".shortSlider").not(".slick-initialized").slick({
   arrows: false,
   // centerMode: true,
 });
+$(".sliderImagesBig").slick({
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+});
+
 $(".relayCardWrapper")
   .not(".slick-initialized")
   .slick({
