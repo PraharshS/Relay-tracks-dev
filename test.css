@@ -38,9 +38,9 @@ button:focus{
     height: 150px;
 }
 .prom{
-    margin-top: 2rem;
+    margin-bottom: 1rem;
     letter-spacing: 2px;
-    font-size: 1.5rem;
+    font-size: 1.8rem !important;
     font-family: var(--titleFont);
     font-weight: 400;
     letter-spacing: 1px;
@@ -60,7 +60,7 @@ button:focus{
 }
 
 .paragraph{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1.1px;
     line-height: 2rem;
     width: 100%;
@@ -211,15 +211,15 @@ height: auto;
       border-bottom-right-radius: 40%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
         align-items: center;
 }
 .slideText h2{
     color: var(--primaryOrange) !important;
     font-family: var(--titleFont);
-     margin: 1rem 0 1rem 0; 
+     margin-top: 1rem; 
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     text-align: left;
     /* height: 30px; */
@@ -228,8 +228,8 @@ height: auto;
 .slideText p{
     color: var(--MatteBlack) !important;
     font-family: var(--primaryFont);
-    letter-spacing: 0.8px;
-    font-size: 1em;
+    letter-spacing: 0.4px;
+    font-size: 0.9em;
     color: white;
     
     width: 85%;
