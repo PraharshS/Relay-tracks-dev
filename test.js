@@ -67,13 +67,19 @@ var collapseBtn = document.querySelectorAll(".titleAndButton button");
 
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].addEventListener("click", () => {
-    collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
-    collapseBtn[i].firstChild.classList.toggle("open");
-    console.log(collapseBtn[i]);
+    if (!collapseBtn[i].firstChild.classList.contains("open")) {
+      collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
+      collapseBtn[i].firstChild.classList.add("open");
+    } else {
+      collapseBtn[i].parentElement.parentElement.classList.remove("activeRow");
+      collapseBtn[i].firstChild.classList.remove("open");
+    }
+
     for (let j = 0; j < collapseBtn.length; j++) {
       if (i != j) {
         var element = collapseBtn[j].parentElement.parentElement;
         element.classList.remove("activeRow");
+        collapseBtn[i].firstChild.classList.remove("open");
       }
     }
   });
