@@ -83,7 +83,7 @@ a,a:focus{
   {
       font-weight: bold;
       
-      color: black !important;
+      color: var(--primaryOrange) !important;
   }
 
   /* .space
@@ -973,23 +973,25 @@ height: auto;
     {
         padding: 1rem 1rem;
         border-radius: 0.5rem;
-        background-color: #fff;
+        background-color: #4f5765;
         margin-top: 0.5rem;
     }
     .sliderTextBig h2
     {
+        color: #fff;
         font-size: 1em;
         font-family: var(--titleFont);
         font-weight: 500;
     }
     .activeRow
     {
-        background-color: #515a68;
+        background-color: #4f5765;
         color: white;
     }
    
     .sliderTextBig p{
         /* display: none; */
+        color: #fff;
         padding-top: 0.2rem;
         font-size: 0.8em;
         font-family: var(--primaryFont);

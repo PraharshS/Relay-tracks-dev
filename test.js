@@ -77,12 +77,12 @@ var collapseBtn = document.querySelectorAll(".titleAndButton span");
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].addEventListener("click", () => {
     if (!collapseBtn[i].firstChild.classList.contains("open")) {
-      collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
+      // collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
       collapseBtn[i].firstChild.classList.add("open");
       for (let j = 0; j < collapseBtn.length; j++) {
         if (i != j) {
           var element = collapseBtn[j].parentElement.parentElement;
-          element.classList.remove("activeRow");
+          // element.classList.remove("activeRow");
           collapseBtn[j].firstChild.classList.remove("open");
         }
       }
