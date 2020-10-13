@@ -60,8 +60,9 @@ button:focus{
 }
 
 .paragraph{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     letter-spacing: 1.1px;
+    line-height: 2rem;
     width: 100%;
     font-weight: 200;
 
