@@ -26,7 +26,7 @@ $(".sliderImagesBig").slick({
   arrows: false,
 });
 
-$(".relayCardWrapper")
+$(".relayCardWrapper0")
   .not(".slick-initialized")
   .slick({
     autoplay: true,
@@ -106,11 +106,51 @@ $(".relayCardWrapper1")
     // prevArrow: $(".leftArrow"),
     // nextArrow: $(".rightArrow"),
   });
-$(".relayCardWrapper2")
+// $(".relayCardWrapper2")
+//   .not(".slick-initialized")
+//   .slick({
+//     autoplay: true,
+//     autoplaySpeed: 3000,
+//     // centerMode: true,
+//     centerPadding: "0px",
+//     slidesToShow: 3,
+//     responsive: [
+//       {
+//         breakpoint: 900,
+//         settings: {
+//           arrows: true,
+//           // centerMode: true,
+//           centerPadding: "1rem",
+//           slidesToShow: 3,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           // centerMode: true,
+//           centerPadding: "60px",
+//           slidesToShow: 1,
+//         },
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           centerMode: true,
+//           centerPadding: "0px",
+//           slidesToShow: 1,
+//         },
+//       },
+//     ],
+//     arrows: false,
+//     dots: false,
+//     // prevArrow: $(".leftArrow"),
+//     // nextArrow: $(".rightArrow"),
+//   });
+$(".meetTeam")
   .not(".slick-initialized")
   .slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: false,
+    // autoplaySpeed: 3000,
     // centerMode: true,
     centerPadding: "0px",
     slidesToShow: 3,

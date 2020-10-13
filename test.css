@@ -743,6 +743,10 @@ height: auto;
 .mentorsHeading h3{
     color: black;
 }
+.relayers .mentors .relayArrows
+{
+    display: none;
+}
 /* -----------------------END OF MENTORS------------------------------ */
 /* -----------------------FOOTER----------------------------- */
 .footer
@@ -1056,10 +1060,10 @@ height: auto;
     }
     .sliderWrapperBig
     {
-        margin: 1rem;
+        margin-top : 1rem;
        
         display: block;
-        min-height: 65%;
+        min-height: 70%;
         /* background-color: antiquewhite;  */
         display: flex;
         flex-direction: row;
@@ -1082,7 +1086,7 @@ height: auto;
     }
     .sliderTextBig 
     {
-        padding: 1rem 1rem;
+        padding: 2rem 2rem;
         border-radius: 0.5rem;
         background-color: #4f5765;
         margin-top: 0.5rem;
@@ -1104,7 +1108,7 @@ height: auto;
         /* display: none; */
         color: #fff;
         padding-top: 0.2rem;
-        font-size: 0.8em;
+        font-size: 1em;
         font-family: var(--primaryFont);
     }
     .titleAndButton
