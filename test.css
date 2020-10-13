@@ -163,7 +163,7 @@ a,a:focus{
 /* -----------------------SHORT SLIDER------------------------------ */
 .shortSliderWrapper
 {
-    margin-top: 11%;
+    margin-top: 6%;
 }
 .shortSlider {
     border-radius: 2rem;
@@ -211,28 +211,28 @@ height: auto;
       border-bottom-right-radius: 40%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
         align-items: center;
 }
 .slideText h2{
     color: var(--primaryOrange) !important;
     font-family: var(--titleFont);
-    padding: 1rem 0;
+     margin: 1rem 0 1rem 0; 
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: left;
-    height: 30px;
-    width: 80%;
+    /* height: 30px; */
+    width: 85%;
 }
 .slideText p{
     color: var(--MatteBlack) !important;
     font-family: var(--primaryFont);
     letter-spacing: 0.8px;
-    font-size: 1.1em;
+    font-size: 1em;
     color: white;
     
-    width: 80%;
+    width: 85%;
     text-align: left;
     /* height: 50px; */
 }
