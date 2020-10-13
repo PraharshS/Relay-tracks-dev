@@ -90,7 +90,7 @@ for (let i = 0; i < collapseBtn.length; i++) {
       }
     } else {
       // collapseBtn[i].parentElement.parentElement.classList.remove("activeRow");
-      // collapseBtn[i].firstChild.classList.remove("open");
+      collapseBtn[i].classList.remove("open");
     }
   });
 }
