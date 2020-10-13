@@ -28,15 +28,7 @@ button:focus{
     padding: 0 2%;
     margin: 0 2%;
 }
-/* 
-.title h2 svg{
-    letter-spacing: 2px;
-     height: 40px;
-    width: 40px;
-    font-family: var(--titleFont);
-    font-weight: 200;
-    letter-spacing: 2px;
-} */
+
 .title svg
 {
     height: 150px;
@@ -45,8 +37,8 @@ button:focus{
     margin-bottom: 1rem;
     letter-spacing: 2px;
     font-size: 1.8rem !important;
-    font-family: var(--titleFont);
-    font-weight: 400;
+    font-family: var(--primaryFont);
+    font-weight: 200 !important;
     letter-spacing: 1px;
 }
 .heading
@@ -60,6 +52,7 @@ button:focus{
 }
 .subheading{
     /* font-size: 1.3rem; */
+    font-weight: 200 !important;
     font-family: var(--primaryFont);
 }
 
@@ -153,7 +146,7 @@ a,a:focus,a:hover,a:active{
 
 .advantage
 {
-    min-height: 120vh;
+    min-height: 100vh;
     background-color: var(--MatteBlack);
 }
 .advantageHeading
@@ -174,7 +167,7 @@ a,a:focus,a:hover,a:active{
     font-family: var(--primaryFont);
     text-align: center;
     margin-top: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 
@@ -355,7 +348,7 @@ height: auto;
     font-family: var(--primaryFont);
     text-align: center;
     margin-top: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .headerWhite h2
@@ -556,7 +549,7 @@ height: auto;
 /* -----------------------RELAYERS----------------------------- */
 .relayers
 {
-    min-height: 120vh;
+    min-height: 100vh;
     background-color: var(--MatteBlack);
     position: relative;
   
@@ -603,7 +596,7 @@ height: auto;
     font-family: var(--primaryFont);
     text-align: center;
     margin-top: 1.5rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 .relayCardWrapper
 {
@@ -751,6 +744,7 @@ height: auto;
 /* -----------------------FOOTER----------------------------- */
 .footer
 {
+    padding: 1rem;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
@@ -769,7 +763,7 @@ height: auto;
 .link
 {
     margin-top: 0.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .credentials
 {
@@ -781,14 +775,14 @@ height: auto;
     margin-bottom: 0.5rem;
 }
 .name h2{
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.5rem;
+    font-weight: 200;
     font-family: var(--titleFont);
     letter-spacing: 1px;
 }
 .number h2{
     font-weight: 200;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: var(--primaryFont);
     letter-spacing: 1px;
 }
@@ -812,11 +806,19 @@ height: auto;
 {
     color: #ff0000;
 }
+.fa-heart
+{
+    color: red;
+}
 /* -----------------------END OF FOOTER------------------------------ */
 @media only screen and (min-width : 480px)
 {
     html{
         font-size: 80% !important;
+    }
+    .relayers
+    {
+        height: 120vh;
     }
     .relayCardWrapper
     {
