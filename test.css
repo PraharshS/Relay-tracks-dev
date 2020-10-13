@@ -945,21 +945,27 @@ height: auto;
     {
         margin-top: 2.5rem;
         display: block;
-        height: 65%;
+        min-height: 100%;
         /* background-color: antiquewhite;  */
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
+        overflow: scroll;
+       
     }
+
     .sliderTextWrapperBig
     {
-        min-height: 100%;
+       
+        height: 100%;
         flex-basis: 45%;
-        overflow: auto;
+        align-self: center;
+        /* overflow-y: scroll; */
         display: flex;
         flex-direction: column;
         margin-right: 2rem;
-        justify-content: space-around;
+        justify-content: space-evenly;
         
     }
     .sliderTextBig 
@@ -967,10 +973,11 @@ height: auto;
         padding: 1rem 1rem;
         border-radius: 0.5rem;
         background-color: #fff;
+        margin-top: 0.5rem;
     }
     .sliderTextBig h2
     {
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-family: var(--titleFont);
         font-weight: 500;
     }
@@ -991,8 +998,8 @@ height: auto;
         display: flex;
         justify-content: space-between;
     }
-    .titleAndButton button{
-        font-size: 1.5rem;
+    .titleAndButton span{
+        font-size: 1.3rem;
         background: transparent;
         cursor: pointer;
         border: none;
@@ -1024,6 +1031,7 @@ height: auto;
         height: 70%;
         display: flex;
         justify-content: center;
+        align-items: flex-start;
     }
     .sliderimageBig img
     {

@@ -63,47 +63,23 @@ $(".relayCardWrapper")
     nextArrow: ".relayArrows .right",
   });
 
-var collapseBtn = document.querySelectorAll(".titleAndButton button");
+var collapseBtn = document.querySelectorAll(".titleAndButton span");
 
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].addEventListener("click", () => {
     if (!collapseBtn[i].firstChild.classList.contains("open")) {
       collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
       collapseBtn[i].firstChild.classList.add("open");
+      for (let j = 0; j < collapseBtn.length; j++) {
+        if (i != j) {
+          var element = collapseBtn[j].parentElement.parentElement;
+          element.classList.remove("activeRow");
+          collapseBtn[j].firstChild.classList.remove("open");
+        }
+      }
     } else {
       collapseBtn[i].parentElement.parentElement.classList.remove("activeRow");
       collapseBtn[i].firstChild.classList.remove("open");
     }
-
-    for (let j = 0; j < collapseBtn.length; j++) {
-      if (i != j) {
-        var element = collapseBtn[j].parentElement.parentElement;
-        element.classList.remove("activeRow");
-        collapseBtn[i].firstChild.classList.remove("open");
-      }
-    }
   });
 }
-// (function (document) {
-//   var div = document.getElementById("container");
-//   var icon = document.getElementById("icon");
-//   var open = false;
-
-//   div.addEventListener("click", function () {
-//     if (open) {
-//       icon.className = "fa fa-arrow-down";
-//     } else {
-//       icon.className = "fa fa-arrow-down open";
-//     }
-
-//     open = !open;
-//   });
-// })(document);
-// $(".sliderImagesBig").not(".slick-initialized").slick({
-//   autoplay: true,
-//   autoplaySpeed: 3000,
-//   dots: false,
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   // centerMode: true,
-// });
