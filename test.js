@@ -9,7 +9,7 @@ $(".animationText").not(".slick-initialized").slick({
 });
 
 $(".shortSlider").not(".slick-initialized").slick({
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 4000,
   dots: true,
   slidesToShow: 1,
