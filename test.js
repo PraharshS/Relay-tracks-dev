@@ -192,7 +192,7 @@ var collapseBtn = document.querySelectorAll(".titleAndButton .fas");
 
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].parentElement.addEventListener("click", () => {
-    console.log("1");
+    // console.log("1");
     if (!collapseBtn[i].classList.contains("open")) {
       // collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
       collapseBtn[i].classList.add("open");
