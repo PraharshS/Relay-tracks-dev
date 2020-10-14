@@ -395,9 +395,9 @@ a:active {
     outline: none;
     /* border-radius: 0.5rem; */
     /* box-shadow: 4px 4px 3px var(--MatteBlack); */
-    box-shadow:
+    /* box-shadow:
         0 5px 10px rgba(154, 160, 185, 0.05),
-        0 15px 40px rgba(166, 173, 201, 0.2);
+        0 15px 40px rgba(166, 173, 201, 0.2); */
 }
 
 .card .image {
@@ -760,9 +760,9 @@ a:active {
 }
 
 .mentors .relayCard .relayText {
-    box-shadow:
+    /* box-shadow:
         0 5px 10px rgba(154, 160, 185, 0.05),
-        0 15px 40px rgba(166, 173, 201, 0.2);
+        0 15px 40px rgba(166, 173, 201, 0.2); */
     color: black;
 }
 
@@ -1174,6 +1174,7 @@ a:active {
         /* display: none; */
         color: #fff;
         padding-top: 0.2rem;
+        padding-left: 1rem;
         font-size: 1.1em;
         /* width: 95%; */
         font-family: var(--primaryFont);
