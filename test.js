@@ -18,8 +18,8 @@ $(".shortSlider").not(".slick-initialized").slick({
   // centerMode: true,
 });
 $(".sliderImagesBig").slick({
-  autoplay: true,
-  autoplaySpeed: 2000,
+  autoplay: false,
+
   dots: false,
   slidesToShow: 1,
   slidesToScroll: 1,
