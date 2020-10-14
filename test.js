@@ -188,7 +188,7 @@ $(".meetTeam")
   });
 
 var collapseBtn = document.querySelectorAll(".titleAndButton .fas");
-// console.log(collapseBtn);
+console.log(collapseBtn);
 
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].parentElement.addEventListener("click", () => {
