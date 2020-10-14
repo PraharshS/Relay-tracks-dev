@@ -153,7 +153,7 @@ iframe {
 [ Table ]*/
 
 .limiter {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -262,6 +262,114 @@ td {
   color: var(--MatteBlack);
   line-height: 1.4;
   text-align: left;
+}
+
+@media only screen and (min-width : 480px) {
+
+
+  .table100.ver1 th {
+    font-family: var(--titleFont);
+    font-size: 0.9rem;
+    text-align: left;
+    padding-left: 0.6rem;
+    color: #fff;
+    line-height: 1.4;
+
+    background-color: var(--primaryOrange);
+  }
+
+  .table100.ver1 td {
+    font-family: var(--primaryFont);
+    font-size: 0.9rem;
+    color: var(--MatteBlack);
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+
+
+  .table100.ver1 th {
+    font-family: var(--titleFont);
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 0.6rem;
+    color: #fff;
+    line-height: 1.4;
+
+    background-color: var(--primaryOrange);
+  }
+
+  .table100.ver1 td {
+    font-family: var(--primaryFont);
+    font-size: 1.2rem;
+    color: var(--MatteBlack);
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width : 900px) {
+  .table100-body {
+    padding-top: 2.1rem;
+  }
+
+  .table100-body td {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .table100.ver1 th {
+    font-family: var(--titleFont);
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 0.6rem;
+    color: #fff;
+    line-height: 1.4;
+
+    background-color: var(--primaryOrange);
+  }
+
+  .table100.ver1 td {
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    color: var(--MatteBlack);
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width : 1100px) {
+  .table100-body {
+    padding-top: 0.5rem;
+  }
+
+  .table100-body td {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .table100.ver1 th {
+    font-family: var(--titleFont);
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 0.6rem;
+    color: #fff;
+    line-height: 1.4;
+
+    background-color: var(--primaryOrange);
+  }
+
+  .table100.ver1 td {
+    font-family: var(--primaryFont);
+    font-size: 1.1rem;
+    color: var(--MatteBlack);
+    line-height: 1.4;
+    text-align: left;
+  }
 }
 
 .table100.ver1 .table100-body tr:nth-child(even) {
