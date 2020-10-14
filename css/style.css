@@ -1622,7 +1622,7 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0px 40px;
+    padding: 0px 50px;
 
 }
 
@@ -1644,7 +1644,7 @@ nav ul li a {
     display: none;
 }
 
-@media(max-width: 786px) {
+@media(max-width: 634px) {
 
     .logo {
         position: fixed;
