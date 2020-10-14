@@ -200,9 +200,9 @@ jQuery(function ($) {
   $win
     .on("scroll", function () {
       if ($(this).scrollTop() > winH) {
-        $nav.addClass("showNav").fadeIn(1000);
+        $nav.addClass("showNav");
       } else {
-        $nav.removeClass("showNav").fadeIn(1000);
+        $nav.removeClass("showNav");
       }
     })
     .on("resize", function () {
