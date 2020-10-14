@@ -587,6 +587,7 @@ a:active {
     justify-content: space-between;
     top: 50%;
     padding: 3%;
+    font-size: 0 !important;
 
     /* z-index: 9999; */
 
