@@ -605,7 +605,7 @@ a:active {
     font-size: 2rem;
     color: var(--primaryOrange) !important;
     cursor: pointer;
-    z-index: 1111;
+    z-index: 99;
 }
 
 .slick-prev:before,
@@ -785,7 +785,7 @@ a:active {
 .footer {
     padding: 1rem;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 200px;
@@ -794,11 +794,11 @@ a:active {
 
 .links {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-evenly;
     /* background-color: #990000; */
     align-items: center;
-    width: 20%;
+    width: 40%;
 }
 
 .link {
@@ -820,9 +820,11 @@ a:active {
     font-weight: 200;
     font-family: var(--titleFont);
     letter-spacing: 1px;
+    padding-bottom: 1rem;
 }
 
 .number h2 {
+    text-align: center;
     font-weight: 200;
     font-size: 1.2rem;
     font-family: var(--primaryFont);
@@ -986,16 +988,16 @@ a:active {
         display: flex;
         /* flex-direction: row; */
         justify-content: space-evenly;
-        width: 80%;
+        width: 60%;
         max-width: 800px;
     }
 
     .name h2 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .number h2 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -1067,11 +1069,11 @@ a:active {
     }
 
     .name h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .number h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     html {
@@ -1536,6 +1538,9 @@ a:active {
         /* height: 380px; */
     }
 
+    .credentials {
+        width: 40%;
+    }
 
 }
 
