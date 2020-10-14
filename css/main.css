@@ -153,7 +153,7 @@ iframe {
 [ Table ]*/
 
 .limiter {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -174,7 +174,7 @@ iframe {
 }
 
 .wrap-table100 {
-  width: 1170px;
+  width: 100%;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -193,9 +193,10 @@ td {
   padding-right: 10px;
 }
 
+
 .column1 {
-  width: 33%;
-  padding-left: 40px;
+  width: 20%;
+  padding-left: 30px;
 }
 
 .column2 {
@@ -213,6 +214,7 @@ td {
 
 .table100-head th {
   padding: 1rem 0;
+
 }
 
 .table100-body td {
@@ -235,7 +237,7 @@ td {
 }
 
 .table100-body {
-  max-height: 585px;
+  /* max-height: 585px; */
   overflow: auto;
 }
 
@@ -246,7 +248,8 @@ td {
 .table100.ver1 th {
   font-family: var(--titleFont);
   font-size: 0.8rem;
-  text-align: center;
+  text-align: left;
+  padding-left: 0.6rem;
   color: #fff;
   line-height: 1.4;
 
@@ -255,10 +258,10 @@ td {
 
 .table100.ver1 td {
   font-family: var(--primaryFont);
-  font-size: 15px;
+  font-size: 0.8rem;
   color: var(--MatteBlack);
   line-height: 1.4;
-  text-align: center;
+  text-align: left;
 }
 
 .table100.ver1 .table100-body tr:nth-child(even) {
