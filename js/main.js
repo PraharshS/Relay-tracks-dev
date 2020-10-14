@@ -29,7 +29,13 @@ $(".sliderImagesBig").slick({
 $(".relayCardWrapper0")
   .not(".slick-initialized")
   .slick({
-    autoplay: true,
+    arrows: false,
+    // dots: true,
+    // prevArrow: ` <button class="leftArrow">
+    //   <i class="fas fa-chevron-left"></i>
+    //   </button>`,
+    // nextArrow: '<i class="fas fa-chevron-right"></i>',
+    autoplay: false,
     autoplaySpeed: 3000,
     // centerMode: true,
     centerPadding: "0px",
@@ -61,15 +67,19 @@ $(".relayCardWrapper0")
         },
       },
     ],
-    arrows: false,
-    dots: false,
-    // prevArrow: $(".leftArrow"),
-    // nextArrow: $(".rightArrow"),
   });
+
+$(".relayers .relayArrows .leftArrow").click(function () {
+  $(".relayCardWrapper0").slick("slickPrev");
+});
+$(".relayers .relayArrows .rightArrow").click(function () {
+  $(".relayCardWrapper0").slick("slickNext");
+});
+
 $(".relayCardWrapper1")
   .not(".slick-initialized")
   .slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     // centerMode: true,
     centerPadding: "0px",
@@ -101,11 +111,18 @@ $(".relayCardWrapper1")
         },
       },
     ],
-    arrows: false,
+    arrows: true,
     dots: false,
     // prevArrow: $(".leftArrow"),
     // nextArrow: $(".rightArrow"),
   });
+$(".mentors .relayArrows .leftArrow").click(function () {
+  $(".relayCardWrapper1").slick("slickPrev");
+});
+$(".mentors .relayArrows .rightArrow").click(function () {
+  $(".relayCardWrapper1").slick("slickNext");
+});
+
 // $(".relayCardWrapper2")
 //   .not(".slick-initialized")
 //   .slick({
