@@ -207,6 +207,14 @@ for (let i = 0; i < collapseBtn.length; i++) {
     } else {
       // collapseBtn[i].parentElement.parentElement.classList.remove("activeRow");
       collapseBtn[i].classList.remove("open");
+      // if (i) {
+      // collapseBtn[0].classList.add("open");
+      console.log(
+        collapseBtn[0].parentElement.parentElement.parentElement
+          .nextElementSibling.firstElementChild
+      );
+      // collapseBtn[0].parentElement.parentElement.classList.add("show");
+      // }
     }
   });
 }
