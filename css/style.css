@@ -835,21 +835,21 @@ a:active {
 }
 
 .insta .fab {
-
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: #fff;
+    /* background: #d6249f; */
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .linkedin .fab {
-    color: #00a0dc;
-    ;
+    color: #fff;
+
 }
 
 .youtube .fab {
-    color: #ff0000;
+    color: #fff;
 }
 
 .fa-heart {
@@ -1646,6 +1646,13 @@ nav ul li a {
     cursor: pointer;
     color: var(--primaryOrange) !important;
     display: none;
+}
+
+.navBtn {
+    background-color: var(--primaryOrange);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    color: white;
 }
 
 @media(max-width: 634px) {
