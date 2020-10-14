@@ -113,8 +113,6 @@ $(".relayCardWrapper1")
     ],
     arrows: true,
     dots: false,
-    // prevArrow: $(".leftArrow"),
-    // nextArrow: $(".rightArrow"),
   });
 $(".mentors .relayArrows .leftArrow").click(function () {
   $(".relayCardWrapper1").slick("slickPrev");
@@ -123,46 +121,6 @@ $(".mentors .relayArrows .rightArrow").click(function () {
   $(".relayCardWrapper1").slick("slickNext");
 });
 
-// $(".relayCardWrapper2")
-//   .not(".slick-initialized")
-//   .slick({
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     // centerMode: true,
-//     centerPadding: "0px",
-//     slidesToShow: 3,
-//     responsive: [
-//       {
-//         breakpoint: 900,
-//         settings: {
-//           arrows: true,
-//           // centerMode: true,
-//           centerPadding: "1rem",
-//           slidesToShow: 3,
-//         },
-//       },
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           // centerMode: true,
-//           centerPadding: "60px",
-//           slidesToShow: 1,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           centerMode: true,
-//           centerPadding: "0px",
-//           slidesToShow: 1,
-//         },
-//       },
-//     ],
-//     arrows: false,
-//     dots: false,
-//     // prevArrow: $(".leftArrow"),
-//     // nextArrow: $(".rightArrow"),
-//   });
 $(".meetTeam")
   .not(".slick-initialized")
   .slick({
@@ -200,38 +158,55 @@ $(".meetTeam")
     ],
     arrows: false,
     dots: false,
-    // prevArrow: $(".leftArrow"),
-    // nextArrow: $(".rightArrow"),
   });
 
 var collapseBtn = document.querySelectorAll(".titleAndButton .fas");
-// console.log(collapseBtn);
 
 for (let i = 0; i < collapseBtn.length; i++) {
   collapseBtn[i].parentElement.addEventListener("click", () => {
-    // console.log("1");
     if (!collapseBtn[i].classList.contains("open")) {
-      // collapseBtn[i].parentElement.parentElement.classList.add("activeRow");
       collapseBtn[i].classList.add("open");
       for (let j = 0; j < collapseBtn.length; j++) {
         if (i != j) {
-          // var element = collapseBtn[j].parentElement.parentElement;
-          // element.classList.remove("activeRow");
-
           collapseBtn[j].classList.remove("open");
         }
       }
     } else {
-      // collapseBtn[i].parentElement.parentElement.classList.remove("activeRow");
       collapseBtn[i].classList.remove("open");
-      // if (i) {
-      // collapseBtn[0].classList.add("open");
+
       console.log(
         collapseBtn[0].parentElement.parentElement.parentElement
           .nextElementSibling.firstElementChild
       );
-      // collapseBtn[0].parentElement.parentElement.classList.add("show");
-      // }
     }
   });
 }
+
+// NAVBAR
+
+$(document).ready(function () {
+  $(".menu-icon").on("click", function () {
+    $("nav ul").toggleClass("showing");
+  });
+});
+
+// Scrolling Effect
+
+jQuery(function ($) {
+  var $nav = $("header");
+  var $win = $(window);
+  var winH = $win.height(); // Get the window height.
+
+  $win
+    .on("scroll", function () {
+      if ($(this).scrollTop() > winH) {
+        $nav.addClass("showNav");
+      } else {
+        $nav.removeClass("showNav");
+      }
+    })
+    .on("resize", function () {
+      // If the user resizes the window
+      winH = $(this).height(); // you'll need the new height value
+    });
+});
