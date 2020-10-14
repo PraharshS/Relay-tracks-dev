@@ -66,7 +66,7 @@ button:focus {
 
 .subheading {
     /* font-size: 1.3rem; */
-    font-weight: 200 !important;
+    font-weight: 300 !important;
     font-family: var(--primaryFont);
 }
 
@@ -186,7 +186,7 @@ a:active {
     font-family: var(--primaryFont);
     text-align: center;
     margin-top: 1.5rem;
-    font-weight: 200;
+    font-weight: 300 !important;
 }
 
 
@@ -370,7 +370,7 @@ a:active {
     font-family: var(--primaryFont);
     text-align: center;
     margin-top: 1.5rem;
-    font-weight: 200;
+    font-weight: 300 !important;
 }
 
 .headerWhite h2 {
@@ -854,6 +854,10 @@ a:active {
 
 .fa-heart {
     color: red;
+}
+
+.mentorsHeading h3 {
+    font-weight: 300 !important;
 }
 
 /* -----------------------END OF FOOTER------------------------------ */
