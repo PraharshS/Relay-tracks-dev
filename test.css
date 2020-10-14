@@ -248,7 +248,7 @@ a:active {
     font-family: var(--primaryFont) !important;
     margin-top: 1rem;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
     text-align: left;
     /* height: 30px; */
@@ -259,7 +259,7 @@ a:active {
     color: var(--MatteBlack) !important;
     font-family: var(--primaryFont);
     letter-spacing: 0.4px;
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: white;
 
     width: 85%;
