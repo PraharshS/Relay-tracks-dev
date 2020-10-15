@@ -228,6 +228,22 @@ a:active {
     height: 50%;
 }
 
+.imag1 {
+    background-image: url('../images/1.png');
+}
+
+.imag2 {
+    background-image: url('../images/2.png');
+}
+
+.imag3 {
+    background-image: url('../images/3.png');
+}
+
+.imag4 {
+    background-image: url('../images/4.png');
+}
+
 .imag1,
 .imag2,
 .imag3,
@@ -237,13 +253,13 @@ a:active {
     width: 100%;
     /* height: 50%; */
     object-fit: cover;
-    background-image: url('../images/1.png');
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.sliderImage img {}
+/* .sliderImage img {} */
 
 .slideText {
     /* background-color: #00a0dc; */
