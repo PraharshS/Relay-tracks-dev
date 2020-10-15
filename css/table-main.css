@@ -226,8 +226,8 @@ td {
 .column4 {
   font-weight: 300 !important;
   width: 27%;
-  border-left: 2px solid var(--primaryOrange);
-  border-right: 2px solid var(--primaryOrange);
+  border-left: 1.5px solid var(--primaryOrange);
+  border-right: 1.5px solid var(--primaryOrange);
   font-weight: 400 !important;
 }
 
@@ -235,7 +235,7 @@ td {
 
 
 .lastBorder {
-  border-bottom: 2px solid var(--primaryOrange);
+  border-bottom: 1.5px solid var(--primaryOrange);
 }
 
 
