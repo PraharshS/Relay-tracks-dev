@@ -189,33 +189,60 @@ table {
 
 th,
 td {
+
   font-weight: unset;
   padding-right: 10px;
 }
 
 
+
 .column1 {
-  width: 20%;
-  padding-left: 30px;
+  width: 30%;
+  /* padding-left: 40px; */
+  font-weight: 600 !important;
+  letter-spacing: 1%;
+  font-size: 1rem !important;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .column2 {
+  font-weight: 300 !important;
   width: 13%;
+  font-weight: 0.8rem;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+
 }
 
 .column3 {
-  width: 22%;
+  font-weight: 300 !important;
+  width: 20%;
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+
 }
 
 .column4 {
-  width: 19%;
+  font-weight: 300 !important;
+  width: 27%;
+  border-left: 2px solid var(--primaryOrange);
+  border-right: 2px solid var(--primaryOrange);
+  font-weight: 400 !important;
 }
 
 
-.table100-head th {
-  padding: 1rem 0;
 
+
+.lastBorder {
+  border-bottom: 2px solid var(--primaryOrange);
 }
+
+
+/* .table100-head th {
+  padding: 0.75rem 0;
+
+} */
 
 .table100-body td {
   padding-top: 16px;
@@ -226,7 +253,7 @@ td {
 [ Fix header ]*/
 .table100 {
   position: relative;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 
 .table100-head {
@@ -247,9 +274,11 @@ td {
 
 .table100.ver1 th {
   font-family: var(--titleFont);
-  font-size: 0.8rem;
-  text-align: left;
-  padding-left: 0.6rem;
+  font-weight: 600 !important;
+  border: none !important;
+  font-size: 0.6rem;
+  text-align: center;
+  /* padding-left: 0.6rem; */
   color: #fff;
   line-height: 1.4;
 
@@ -288,13 +317,15 @@ td {
 }
 
 @media only screen and (min-width : 768px) {
-
+  .table100-body {
+    padding-top: 7px;
+  }
 
   .table100.ver1 th {
     font-family: var(--titleFont);
     font-size: 1rem;
     text-align: left;
-    padding-left: 0.6rem;
+    padding-left: 0.75rem;
     color: #fff;
     line-height: 1.4;
 
@@ -312,7 +343,7 @@ td {
 
 @media only screen and (min-width : 900px) {
   .table100-body {
-    padding-top: 2.1rem;
+    padding-top: 0.7rem;
   }
 
   .table100-body td {
@@ -323,9 +354,9 @@ td {
 
   .table100.ver1 th {
     font-family: var(--titleFont);
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: left;
-    padding-left: 0.6rem;
+    padding-left: 0.75rem;
     color: #fff;
     line-height: 1.4;
 
@@ -343,7 +374,7 @@ td {
 
 @media only screen and (min-width : 1100px) {
   .table100-body {
-    padding-top: 0.5rem;
+    padding-top: 0.8rem;
   }
 
   .table100-body td {
@@ -365,7 +396,7 @@ td {
 
   .table100.ver1 td {
     font-family: var(--primaryFont);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--MatteBlack);
     line-height: 1.4;
     text-align: left;
@@ -373,13 +404,13 @@ td {
 }
 
 .table100.ver1 .table100-body tr:nth-child(even) {
-  background-color: #f8f6ff;
+  /* background-color: #f8f6ff; */
 }
 
 /*---------------------------------------------*/
 
 .table100.ver1 {
-  border-radius: 10px;
+  border-radius: 0.3rem;
   overflow: hidden;
   box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);

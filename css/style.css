@@ -1689,7 +1689,7 @@ nav ul li a {
     color: white;
 }
 
-@media(max-width: 634px) {
+@media(max-width: 718px) {
 
     .logo {
         position: fixed;
