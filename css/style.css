@@ -855,17 +855,28 @@ a:active {
     justify-content: space-evenly;
     /* background-color: #990000; */
     align-items: center;
-    width: 40%;
+    width: 30%;
 }
 
 .link {
     margin-top: 0.5rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .credentials {
     color: white;
     margin-top: 1rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
+.copyright h4 {
+    font-family: var(--primaryFont);
+    color: white;
+    font-weight: 200 !important;
+    font-size: 1rem !important;
 }
 
 .name {
@@ -1033,7 +1044,7 @@ a:active {
     .links {
         flex-direction: row;
         /* background-color:lightblue; */
-        width: 60%;
+        width: 40%;
         max-width: 400px;
     }
 
@@ -1045,7 +1056,7 @@ a:active {
         display: flex;
         /* flex-direction: row; */
         justify-content: space-evenly;
-        width: 60%;
+        width: 70%;
         max-width: 800px;
     }
 
@@ -1688,7 +1699,7 @@ a:active {
     }
 
     .credentials {
-        width: 40%;
+        width: 70%;
     }
 
 }
