@@ -191,35 +191,48 @@ table {
   width: 100%;
 }
 
-th {
-  padding-left: 2rem !important;
-}
+
 
 th,
 td {
-
+  text-align: center !important;
   font-weight: unset;
   /* padding-right: 10px; */
 }
 
+th:first-of-type {
+  /* background-color: #f37049 !important; */
+  padding-left: 113px !important;
+}
+
+/* th:last-of-type {
+  background-color: var(--primaryOrange) !important;
+  border-left: 1.5px solid var(--primaryOrange) !important;
+  color: white !important;
+} */
+
+/* th:first-of-type {
+  background-color: #f37049 !important;
+  width: 5px !important;
+} */
 
 
 .column1 {
-  width: 14%;
+  width: 12%;
   /* padding-left: 40px; */
   font-weight: 600 !important;
   letter-spacing: 1%;
   font-size: 1rem !important;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid rgb(233 236 239);
+  border-bottom: 1px solid rgb(233 236 239);
 }
 
 .column2 {
   font-weight: 300 !important;
   width: 15%;
   font-weight: 0.8rem;
-  border-right: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid rgb(233 236 239);
+  border-bottom: 1px solid rgb(233 236 239);
 
 }
 
@@ -227,7 +240,7 @@ td {
   font-weight: 300 !important;
   width: 15%;
   /* border-right: 1px solid #cccccc; */
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid rgb(233 236 239);
 
 }
 
@@ -246,6 +259,10 @@ td {
   border-bottom: 1.5px solid var(--primaryOrange);
 }
 
+.firstBorder {
+  border-top: 1.5px solid var(--primaryOrange) !important;
+}
+
 
 /* .table100-head th {
   padding: 0.75rem 0;
@@ -258,6 +275,7 @@ td {
 
 
 .table100-body td {
+  text-align: center !important;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -292,10 +310,10 @@ td {
   font-size: 0.6rem;
   text-align: center;
   padding-left: 0.75rem;
-  color: #fff;
+  color: var(--MatteBlack);
   line-height: 1.4;
 
-  background-color: var(--primaryOrange);
+  background-color: white;
 }
 
 .table100.ver1 td {
@@ -307,6 +325,10 @@ td {
 }
 
 @media only screen and (min-width : 480px) {
+  th:first-of-type {
+    /* background-color: #f37049 !important; */
+    padding-left: 131px !important;
+  }
 
   .table100 {
     position: relative;
@@ -318,10 +340,10 @@ td {
     font-size: 0.5rem;
     text-align: left;
     padding-left: 0.6rem;
-    color: #fff;
+    color: var(--MatteBlack);
     line-height: 1.4;
 
-    background-color: var(--primaryOrange);
+    background-color: white;
   }
 
   .table100.ver1 td {
@@ -336,6 +358,11 @@ td {
 
 
 @media only screen and (min-width : 768px) {
+  th:first-of-type {
+    /* background-color: #f37049 !important; */
+    padding-left: 160px !important;
+  }
+
   .table100-body {
     padding-top: 9px;
   }
@@ -345,10 +372,10 @@ td {
     font-size: 0.8rem;
     text-align: left;
     padding-left: 0.75rem;
-    color: #fff;
+    color: var(--MatteBlack);
     line-height: 1.4;
 
-    background-color: var(--primaryOrange);
+    background-color: white;
   }
 
   .table100.ver1 td {
@@ -361,6 +388,11 @@ td {
 }
 
 @media only screen and (min-width : 900px) {
+  th:first-of-type {
+    /* background-color: #f37049 !important; */
+    padding-left: 177px !important;
+  }
+
   .table100-body {
     padding-top: 0.6rem;
   }
@@ -376,10 +408,10 @@ td {
     font-size: 0.7rem;
     text-align: left;
     padding-left: 0.75rem;
-    color: #fff;
+    color: var(--MatteBlack);
     line-height: 1.4;
 
-    background-color: var(--primaryOrange);
+    background-color: white;
   }
 
   .table100.ver1 td {
@@ -387,7 +419,7 @@ td {
     font-size: 1rem;
     color: var(--MatteBlack);
     line-height: 1.4;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -407,10 +439,10 @@ td {
     font-size: 1.1rem;
     text-align: center;
     padding-left: 0.6rem;
-    color: #fff;
+    color: var(--MatteBlack);
     line-height: 1.4;
 
-    background-color: var(--primaryOrange);
+    background-color: white;
   }
 
   .table100.ver1 td {
@@ -422,9 +454,6 @@ td {
   }
 }
 
-.table100.ver1 .table100-body tr:nth-child(even) {
-  /* background-color: #f8f6ff; */
-}
 
 /*---------------------------------------------*/
 

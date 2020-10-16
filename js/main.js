@@ -44,7 +44,7 @@ $(".relayCardWrapper0")
       {
         breakpoint: 900,
         settings: {
-          arrows: true,
+          arrows: false,
           // centerMode: true,
           centerPadding: "1rem",
           slidesToShow: 3,

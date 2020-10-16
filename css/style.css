@@ -200,7 +200,7 @@ a:active {
 .shortSlider {
     border-radius: 2rem;
     /* background: #5E5E5E; */
-    background: #fff;
+    background: rgb(79 87 101);
     position: relative;
     height: 60%;
     margin: 0 auto;
@@ -286,11 +286,11 @@ a:active {
 }
 
 .slideText p {
-    color: var(--MatteBlack) !important;
+
     font-family: var(--primaryFont);
     letter-spacing: 0.4px;
     font-size: 1.1em;
-    color: white;
+    color: white !important;
 
     width: 85%;
     text-align: left;
@@ -606,6 +606,10 @@ a:active {
 
 }
 
+.relayersCompany {
+    padding-top: 2rem;
+}
+
 .relayArrows {
     position: absolute;
     height: 100;
@@ -714,9 +718,16 @@ a:active {
 }
 
 .relayText p {
-    font-size-adjust: 1.5rem;
+
+    font-size: 1.2rem;
     letter-spacing: 1px;
     /* margin-top: 1rem; */
+}
+
+.relayersCompany {
+
+    font-size: 1rem !important;
+    padding: 1rem 1rem;
 }
 
 
@@ -794,6 +805,7 @@ a:active {
     /* box-shadow:
         0 5px 10px rgba(154, 160, 185, 0.05),
         0 15px 40px rgba(166, 173, 201, 0.2); */
+    /* background-color: antiquewhite; */
     color: black;
 }
 
@@ -801,8 +813,28 @@ a:active {
     color: black;
 }
 
+.companyLogo {
+    margin-top: 1rem;
+    text-align: center;
+    height: auto;
+}
+
+
 .relayers .mentors .relayArrows {
     display: none;
+}
+
+.relayCardWrapper1 .relayText .companyLogo {
+    margin-top: 1rem;
+    text-align: center;
+    height: auto;
+}
+
+.companyLogo img {
+    margin: auto;
+    height: 50px;
+    width: auto;
+    /* width: 70px; */
 }
 
 /* -----------------------END OF MENTORS------------------------------ */
@@ -947,7 +979,7 @@ a:active {
 
     .relayText h2 {
         font-size: 1.8rem;
-        padding-top: 8rem;
+        padding-top: 9rem;
         padding-bottom: 0.5rem;
         letter-spacing: 1px;
         font-weight: bold;
@@ -1080,18 +1112,49 @@ a:active {
     }
 
     .relayText h2 {
-        font-size: 1.2rem;
-        padding-top: 6rem;
-        padding-bottom: 0.5rem;
+        font-size: 1.1rem;
+        padding-top: 4rem;
+        padding-bottom: 0.3rem;
         letter-spacing: 1px;
         font-weight: bold;
     }
 
     .relayText p {
-        font-size-adjust: 1rem;
+        font-size: 1rem;
         letter-spacing: 1px;
         /* margin-top: 1rem; */
     }
+
+    .relayersCompany {
+        font-size: 0.8rem !important;
+    }
+
+    .relayers .mentors .relayArrows {
+        display: none;
+    }
+
+    .relayCardWrapper1 .relayText {
+        padding-top: 0.8rem;
+    }
+
+    .relayCardWrapper1 .relayText h2 {
+        height: 80px;
+        font-size: 1rem !important;
+    }
+
+    .relayCardWrapper1 .relayText .companyLogo {
+        margin-top: 1rem;
+        text-align: center;
+        height: auto;
+    }
+
+    .companyLogo img {
+        margin: auto;
+        height: 40px;
+        width: auto;
+        /* width: 70px; */
+    }
+
 
     .name h2 {
         font-size: 1.2rem;
@@ -1391,7 +1454,7 @@ a:active {
 
     .relayText h2 {
         font-size: 1.1rem;
-        padding-top: 5rem;
+        padding-top: 4rem;
         padding-bottom: 0.5rem;
         letter-spacing: 1px;
         font-weight: bold;
@@ -1400,7 +1463,38 @@ a:active {
     .relayText p {
         font-size: 0.8rem;
         letter-spacing: 1px;
+
         /* margin-top: 1rem; */
+    }
+
+    .relayersCompany {
+        padding-top: 0.8rem;
+        font-size: 0.7rem !important;
+    }
+
+    .relayCardWrapper1 .relayText {
+        padding-top: 0rem;
+    }
+
+    .relayCardWrapper1 .relayText h2 {
+
+        height: 40px;
+        margin-top: 0.8rem;
+        font-size: 0.9rem !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .relayCardWrapper1 .relayText .companyLogo {
+        margin-top: 1rem;
+        text-align: center;
+        height: auto;
+    }
+
+    .companyLogo img {
+        margin: auto;
+        height: 40px;
+        width: auto;
+        /* width: 70px; */
     }
 
 }
@@ -1519,7 +1613,7 @@ a:active {
     .relayText h2 {
         font-size: 1.4rem;
         padding-top: 6rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.3rem;
         letter-spacing: 1px;
         font-weight: bold;
     }
@@ -1528,6 +1622,36 @@ a:active {
         font-size: 1rem;
         letter-spacing: 1px;
         /* margin-top: 1rem; */
+    }
+
+    .relayersCompany {
+        padding-top: 0.5rem;
+        font-size: 0.7rem !important;
+    }
+
+    .relayCardWrapper1 .relayText {
+        padding-top: 0rem;
+    }
+
+    .relayCardWrapper1 .relayText h2 {
+
+        height: 40px;
+        margin-top: 0.4rem;
+        font-size: 1.2rem !important;
+        margin-bottom: 1.5rem;
+    }
+
+    .relayCardWrapper1 .relayText .companyLogo {
+        margin-top: 1rem;
+        text-align: center;
+        height: auto;
+    }
+
+    .companyLogo img {
+        margin: auto;
+        height: 50px;
+        width: auto;
+        /* width: 70px; */
     }
 
     .imageSliderBig {
