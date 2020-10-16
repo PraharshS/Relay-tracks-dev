@@ -13,6 +13,10 @@
     /* outline: 1px solid lightblue; */
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .slick-slide {
     outline: none;
 }
@@ -838,6 +842,22 @@ a:active {
 }
 
 /* -----------------------END OF MENTORS------------------------------ */
+.relayCardWrapper2 {
+    min-height: 130vh;
+    margin-bottom: 4rem;
+    height: auto;
+}
+
+
+
+.meetTeam {
+    margin-top: 8rem;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 100px;
+}
+
 /* -----------------------FOOTER----------------------------- */
 .footer {
     padding: 1rem;
@@ -934,6 +954,21 @@ a:active {
 @media only screen and (min-width : 480px) {
     html {
         font-size: 80% !important;
+    }
+
+    .relayCardWrapper2 {
+        min-height: 170vh;
+        margin-bottom: 4rem;
+        height: auto;
+    }
+
+
+    .meetTeam {
+        margin-top: 10rem !important;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 160px;
     }
 
     .relayers {
@@ -1055,7 +1090,7 @@ a:active {
     .credentials {
         display: flex;
         /* flex-direction: row; */
-        justify-content: space-evenly;
+        justify-content: space-around;
         width: 70%;
         max-width: 800px;
     }
@@ -1070,6 +1105,21 @@ a:active {
 }
 
 @media only screen and (min-width : 768px) {
+    .relayCardWrapper2 {
+        min-height: 90vh;
+        margin-bottom: 2rem;
+        height: auto;
+    }
+
+
+    .meetTeam {
+        margin-top: 4rem !important;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+    }
+
     .relayers {
         height: 80vh;
     }

@@ -121,45 +121,6 @@ $(".mentors .relayArrows .rightArrow").click(function () {
   $(".relayCardWrapper1").slick("slickNext");
 });
 
-$(".meetTeam")
-  .not(".slick-initialized")
-  .slick({
-    autoplay: false,
-    // autoplaySpeed: 3000,
-    // centerMode: true,
-    centerPadding: "0px",
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: {
-          arrows: true,
-          // centerMode: true,
-          centerPadding: "1rem",
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          // centerMode: true,
-          centerPadding: "60px",
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true,
-          centerPadding: "0px",
-          slidesToShow: 1,
-        },
-      },
-    ],
-    arrows: false,
-    dots: false,
-  });
-
 var collapseBtn = document.querySelectorAll(".titleAndButton .fas");
 
 for (let i = 0; i < collapseBtn.length; i++) {
