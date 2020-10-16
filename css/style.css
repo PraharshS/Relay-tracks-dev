@@ -15,6 +15,7 @@
 
 
 
+
 .slick-slide {
     outline: none;
 }
@@ -23,6 +24,9 @@
     font-size: 0 !important;
 }
 
+.slick-initialized {
+    overflow: hidden;
+}
 
 html {
     scroll-behavior: smooth;
