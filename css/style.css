@@ -1174,9 +1174,7 @@ a:active {
     }
 }
 
-* {
-    /* outline: 1px solid wheat; */
-}
+
 
 @media only screen and (min-width : 768px) {
     .relayCardWrapper2 {
@@ -1853,9 +1851,6 @@ a:active {
         padding: 1rem 0 0.5rem 0;
     }
 
-    .copyright {
-        /* padding-bottom: 1rem; */
-    }
 
     .number h2 {
         padding-bottom: 0 !important;
