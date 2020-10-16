@@ -685,7 +685,7 @@ a:active {
 
 }
 
-.relayImage img {
+.relayImage img:first-of-type {
     position: absolute;
     width: 140px;
     height: 140px;
@@ -694,6 +694,20 @@ a:active {
     transform: translate(-50%, -50%);
     margin: auto;
     border-radius: 50%;
+    /* opacity: 0; */
+}
+
+.hoverimage {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 100;
 }
 
 .relayText {
