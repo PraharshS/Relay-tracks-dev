@@ -1101,7 +1101,7 @@ a:active {
         width: 120px;
         height: 120px;
         left: 50%;
-        top: 93%;
+        top: 92%;
         transform: translate(-50%, -50%);
         margin: auto;
         border-radius: 50%;
@@ -1109,7 +1109,7 @@ a:active {
 
     .relayText {
         margin: auto;
-        height: 50%;
+        height: 55%;
         width: 170px;
         background-color: #fff;
 
@@ -1431,6 +1431,10 @@ a:active {
 
     }
 
+    .relayText {
+        height: 60%;
+    }
+
     .relayImage {
         position: relative;
         height: 40%;
@@ -1439,8 +1443,8 @@ a:active {
 
     .relayImage img {
         position: absolute;
-        width: 130px;
-        height: 130px;
+        width: 120px;
+        height: 120px;
         left: 50%;
         top: 93%;
         transform: translate(-50%, -50%);
@@ -1579,7 +1583,7 @@ a:active {
     }
 
     .relayCard {
-        height: 60%;
+        height: 65%;
         margin: 0rem 0rem 1rem 0rem;
         /* background-color: #00B0FF; */
         display: flex;
@@ -1595,6 +1599,8 @@ a:active {
 
     }
 
+
+
     .relayImage img {
         position: absolute;
         width: 180px;
@@ -1608,7 +1614,7 @@ a:active {
 
     .relayText {
         margin: auto;
-        height: 45%;
+        height: 50%;
         width: 220px;
         background-color: #fff;
 
