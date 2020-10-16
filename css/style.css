@@ -28,6 +28,8 @@
     overflow: hidden;
 }
 
+
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -687,9 +689,13 @@ a:active {
     position: relative;
     height: 40%;
 
+
 }
 
-.relayImage img {
+.relayImage img,
+.relayImage a {
+
+    cursor: pointer;
     position: absolute;
     width: 140px;
     height: 140px;
@@ -698,7 +704,37 @@ a:active {
     transform: translate(-50%, -50%);
     margin: auto;
     border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
+
+
+
+.relayImage a {
+    border: none !important;
+    border-radius: 0 !important;
+    z-index: 10 !important;
+    /* background-color: #00B0FF; */
+}
+
+.relayImage a:hover~.photo {
+    opacity: 0.2 !important;
+}
+
+
+.inImage {
+    background-color: #fff;
+    border: none !important;
+    border-radius: none !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+
+
+
+
 
 .relayText {
     margin: auto;
