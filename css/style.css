@@ -910,6 +910,115 @@ a:active {
     grid-gap: 100px;
 }
 
+
+/* -----------------------FAQ----------------------------- */
+.faq {
+    background-color: var(--MatteBlack);
+    padding-top: 2rem;
+    min-height: 110vh;
+}
+
+.card {
+    width: 100%;
+}
+
+.faqWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.faqHeading {
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+}
+
+.faqHeading h2 {
+    color: white;
+    text-align: center !important;
+
+}
+
+.faqHeading h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: var(--primaryFont);
+    text-align: center;
+    margin-top: 1.5rem;
+    font-weight: 200;
+}
+
+.questionsWrapper {
+
+    padding: 2rem 0 4rem 0;
+    width: 100%;
+}
+
+
+
+.question {
+    padding: 1rem;
+    border-bottom: 1.5px solid white;
+    margin: 1rem 0;
+}
+
+.questionAndArrow {
+    width: 100%;
+    /* padding: 0 1rem; */
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--primaryFont);
+}
+
+.arrowdown {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.1s linear;
+}
+
+.arrowdown.open {
+
+    transform: rotate(180deg);
+    transition: transform 0.1s linear;
+}
+
+.questionAndArrow h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    text-align: left !important;
+    padding-right: 1rem;
+    color: var(--primaryOrange);
+}
+
+.answer {
+    width: 100%;
+    /* padding: 1rem 2rem; */
+}
+
+.answer p {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    color: white;
+}
+
+.answer p {
+    font-size: 1.2rem;
+    font-family: var(--primaryFont);
+    ;
+}
+
+.questionAndArrow span {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--primaryOrange);
+}
+
+/* -----------------------END OF FAQ----------------------------- */
 /* -----------------------FOOTER----------------------------- */
 .footer {
     padding: 1rem;
@@ -1654,6 +1763,35 @@ a:active {
 @media only screen and (min-width : 1100px) {
     html {
         font-size: 100% !important;
+    }
+
+    .faqWrapper {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        margin: 2rem 0;
+
+    }
+
+    .faqHeading {
+        align-self: flex-start;
+
+    }
+
+    .faqHeading h2 {
+        font-size: 3rem;
+    }
+
+    .faqHeading h3 {
+        font-size: 2rem;
+    }
+
+    .faqHeading h2,
+    .faqHeading h3 {
+        padding-right: 6rem;
+
     }
 
     .relayCardWrapper2 {

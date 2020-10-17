@@ -134,11 +134,26 @@ for (let i = 0; i < collapseBtn.length; i++) {
       }
     } else {
       collapseBtn[i].classList.remove("open");
+    }
+  });
+}
+var faqArrow = document.querySelectorAll(".questionAndArrow span .fas");
 
-      console.log(
-        collapseBtn[0].parentElement.parentElement.parentElement
-          .nextElementSibling.firstElementChild
-      );
+for (let i = 0; i < faqArrow.length; i++) {
+  faqArrow[i].parentElement.addEventListener("click", () => {
+    if (!faqArrow[i].classList.contains("open")) {
+      faqArrow[i].parentElement.previousElementSibling.style.color = "#fff";
+      faqArrow[i].classList.add("open");
+      for (let j = 0; j < faqArrow.length; j++) {
+        if (i != j) {
+          faqArrow[j].parentElement.previousElementSibling.style.color =
+            "#f37049";
+          faqArrow[j].classList.remove("open");
+        }
+      }
+    } else {
+      faqArrow[i].parentElement.previousElementSibling.style.color = "#f37049";
+      faqArrow[i].classList.remove("open");
     }
   });
 }
