@@ -1777,20 +1777,21 @@ a:active {
 
     .faqHeading {
         align-self: flex-start;
+        width: 35%;
 
     }
 
     .faqHeading h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .faqHeading h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .faqHeading h2,
     .faqHeading h3 {
-        padding-right: 6rem;
+        padding-right: 3rem;
 
     }
 
