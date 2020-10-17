@@ -783,7 +783,7 @@ a:active {
     background-color: var(--MatteBlack);
     padding-bottom: 4rem;
 
-    height: 300px;
+    height: auto;
 }
 
 .levelUpWrapper {
@@ -973,6 +973,7 @@ a:active {
     display: flex;
     justify-content: space-between;
     font-family: var(--primaryFont);
+    color: white;
 }
 
 .arrowdown {
@@ -992,7 +993,7 @@ a:active {
     letter-spacing: 0.5px;
     text-align: left !important;
     padding-right: 1rem;
-    color: var(--primaryOrange);
+
 }
 
 .answer {
@@ -1771,7 +1772,7 @@ a:active {
         align-items: center;
         justify-content: space-between;
         height: auto;
-        margin: 2rem 0;
+        margin: 2rem 0 0 0;
 
     }
 
